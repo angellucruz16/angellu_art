@@ -1,0 +1,16 @@
+// imports
+@import "header";
+@import "hero";
+@import "category";
+// code
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title {
+  font-family: bely-display, sans-serif;
+}
+.paragraph {
+  font-family: muli, sans-serif;
+}

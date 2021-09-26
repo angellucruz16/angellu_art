@@ -1,0 +1,49 @@
+.hero {
+  position: relative;
+  width: 100vw;
+}
+
+.hero__img {
+  width: 100%;
+}
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #1d3137;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  -webkit-transform: translate(0, -30%);
+          transform: translate(0, -30%);
+  width: 46vmin;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.hero__container .title {
+  font-size: 5vmin;
+}
+
+.hero__container .title img {
+  width: 6vmin;
+}
+
+.hero__container .paragraph {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__container .paragraph p {
+  font-size: 3vmin;
+  font-weight: 300;
+}
+/*# sourceMappingURL=hero.css.map */

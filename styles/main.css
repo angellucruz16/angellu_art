@@ -48,6 +48,7 @@ body {
   color: #1d3137;
   position: absolute;
   top: 40%;
+  left: 0;
   -webkit-transform: translate(0, -30%);
           transform: translate(0, -30%);
   width: 46vmin;
@@ -85,6 +86,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .category__div {
@@ -104,17 +106,26 @@ body {
   color: #1d3137;
 }
 
-.category__container img {
+.category .article {
+  text-align: center;
+}
+
+.category .article img {
   width: 70%;
   border-radius: 50%;
 }
 
-.category__container h2 {
+.category .artice h2 {
   font-size: 4vw;
 }
 
-.article {
-  text-align: center;
+.category__decor {
+  position: absolute;
+  z-index: -1;
+}
+
+.category__decor .category__decor__square {
+  left: -20px;
 }
 
 * {
@@ -122,6 +133,11 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .title {

@@ -7,6 +7,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .category__div {
@@ -26,16 +27,21 @@
   color: #1d3137;
 }
 
-.category__container img {
+.category .article {
+  text-align: center;
+}
+
+.category .article img {
   width: 70%;
   border-radius: 50%;
 }
 
-.category__container h2 {
+.category .artice h2 {
   font-size: 4vw;
 }
 
-.article {
-  text-align: center;
+.category__decor {
+  position: absolute;
+  z-index: -1;
 }
 /*# sourceMappingURL=category.css.map */

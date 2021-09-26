@@ -3,6 +3,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
+  position: relative;
   &__div {
     padding-top: 20px;
     margin: 0 auto;
@@ -13,15 +14,23 @@
 
     padding-top: 40px;
     color: #1d3137;
-    img {
-      width: 70%;
-      border-radius: 50%;
+  }
+  .article {
+    text-align: center;
+  }
+  .article img {
+    width: 70%;
+    border-radius: 50%;
+  }
+  .artice h2 {
+    font-size: 4vw;
+  }
+  &__decor {
+    position: absolute;
+    z-index: -1;
+    .category__decor__square {
     }
-    h2 {
-      font-size: 4vw;
+    .category__decor__wave {
     }
   }
-}
-.article {
-  text-align: center;
 }

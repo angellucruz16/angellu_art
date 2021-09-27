@@ -124,10 +124,6 @@ body {
   z-index: -1;
 }
 
-.category__decor .category__decor__square {
-  left: -20px;
-}
-
 * {
   margin: 0;
   padding: 0;

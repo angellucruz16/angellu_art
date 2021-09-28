@@ -27,17 +27,18 @@
   color: #1d3137;
 }
 
-.category .article {
+.category__container .article {
   text-align: center;
 }
 
-.category .article img {
+.category__container .article img {
   width: 70%;
   border-radius: 50%;
 }
 
-.category .artice h2 {
-  font-size: 4vw;
+.category__container .artice h3 {
+  font-size: 2vw;
+  font-weight: 300;
 }
 
 .category__decor {

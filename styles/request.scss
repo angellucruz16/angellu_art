@@ -1,0 +1,37 @@
+// ✅ Request section
+$blue-text: #0783f5;
+.request {
+  &__container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: yellow;
+    .request__title {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .request__title h2 {
+      font-weight: 700;
+      font-style: italic;
+      margin: 3px;
+    }
+    .request__title h2:nth-child(2) {
+      color: $blue-text;
+    }
+    .request__title img {
+      width: 20px;
+      height: 20px;
+    }
+    & p {
+      padding: 13px;
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__btn {
+    }
+  }
+}

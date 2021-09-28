@@ -1,4 +1,7 @@
 // ✅ Category section
+// 📌 variables no funcionan desde el main
+$dark-text: #1d3137;
+$blue-text: #0783f5;
 .category {
   width: 100vw;
   display: flex;
@@ -13,26 +16,29 @@
     flex-direction: row;
 
     padding-top: 40px;
-    color: #1d3137;
-  }
-  .article {
-    text-align: center;
-  }
-  .article img {
-    width: 70%;
-    border-radius: 50%;
-  }
-  .artice h2 {
-    font-size: 4vw;
+    color: $dark-text;
+    // 📌articles no se centran del todo
+    .article {
+      text-align: center;
+    }
+    .article img {
+      width: 70%;
+      border-radius: 50%;
+    }
+    .artice h3 {
+      font-size: 2vw;
+      font-weight: 300;
+      // 📌ya no me cambia
+    }
   }
   &__decor {
     position: absolute;
     z-index: -1;
     // .category__decor__square {
-    //   // no se mueve
+    //   // 📌no se mueve
     // }
     // .category__decor__wave {
-    //   // no se mueve
+    //   //📌 no se mueve
     // }
   }
 }

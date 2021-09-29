@@ -32,3 +32,15 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
+.btn-fill {
+  font-family: "Muli", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: cornsilk;
+  font-weight: 500;
+  font-size: 0.8em;
+  width: 150px;
+  padding: 11px;
+  border-radius: 50px;
+  background: $orange-btn;
+}

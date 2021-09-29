@@ -1,6 +1,8 @@
 // ✅ Request section
 $blue-text: #0783f5;
 .request {
+  margin: 0auto;
+  padding-top: 40px;
   &__container {
     width: 100vw;
     display: flex;
@@ -16,6 +18,7 @@ $blue-text: #0783f5;
     .request__title h2 {
       font-weight: 700;
       font-style: italic;
+      font-size: 1.8em;
       margin: 3px;
     }
     .request__title h2:nth-child(2) {
@@ -26,12 +29,16 @@ $blue-text: #0783f5;
       height: 20px;
     }
     & p {
+      font-size: 1.1em;
       padding: 13px;
       align-items: center;
       margin: 0 auto;
       text-align: center;
+      line-height: 1.2em;
     }
-    &__btn {
+    & a {
+      margin: 0 auto;
+      // 📌el boton no esta centrado internamente
     }
   }
 }

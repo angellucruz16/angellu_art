@@ -125,6 +125,11 @@ body {
   z-index: -1;
 }
 
+.request {
+  margin: 0auto;
+  padding-top: 40px;
+}
+
 .request__container {
   width: 100vw;
   display: -webkit-box;
@@ -154,6 +159,7 @@ body {
 .request__container .request__title h2 {
   font-weight: 700;
   font-style: italic;
+  font-size: 1.8em;
   margin: 3px;
 }
 
@@ -167,12 +173,18 @@ body {
 }
 
 .request__container p {
+  font-size: 1.1em;
   padding: 13px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
   text-align: center;
+  line-height: 1.2em;
+}
+
+.request__container a {
+  margin: 0 auto;
 }
 
 * {
@@ -199,5 +211,18 @@ body {
   font-family: muli, sans-serif;
   font-weight: 500;
   text-decoration: none;
+}
+
+.btn-fill {
+  font-family: "Muli", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: cornsilk;
+  font-weight: 500;
+  font-size: 0.8em;
+  width: 150px;
+  padding: 11px;
+  border-radius: 50px;
+  background: #f2994a;
 }
 /*# sourceMappingURL=main.css.map */

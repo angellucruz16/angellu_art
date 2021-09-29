@@ -1,3 +1,8 @@
+.request {
+  margin: 0auto;
+  padding-top: 40px;
+}
+
 .request__container {
   width: 100vw;
   display: -webkit-box;
@@ -27,6 +32,7 @@
 .request__container .request__title h2 {
   font-weight: 700;
   font-style: italic;
+  font-size: 1.8em;
   margin: 3px;
 }
 
@@ -40,11 +46,17 @@
 }
 
 .request__container p {
+  font-size: 1.1em;
   padding: 13px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
   text-align: center;
+  line-height: 1.2em;
+}
+
+.request__container a {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=request.css.map */

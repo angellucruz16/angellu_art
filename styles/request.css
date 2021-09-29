@@ -16,7 +16,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 30px;
-  background-color: yellow;
+  background-color: #fcf5f0;
 }
 
 .request__container .request__title {
@@ -57,6 +57,12 @@
 }
 
 .request__container a {
+  margin: 0 auto;
+}
+
+.request__main-img {
+  width: 80vmin;
+  display: block;
   margin: 0 auto;
 }
 /*# sourceMappingURL=request.css.map */

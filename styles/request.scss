@@ -9,7 +9,7 @@ $blue-text: #0783f5;
     flex-direction: column;
     justify-content: center;
     padding: 30px;
-    background-color: yellow;
+    background-color: #fcf5f0;
     .request__title {
       display: flex;
       align-items: center;
@@ -40,5 +40,10 @@ $blue-text: #0783f5;
       margin: 0 auto;
       // 📌el boton no esta centrado internamente
     }
+  }
+  &__main-img {
+    width: 80vmin;
+    display: block;
+    margin: 0 auto;
   }
 }

@@ -41,9 +41,21 @@ $blue-text: #0783f5;
       // 📌el boton no esta centrado internamente
     }
   }
-  &__main-img {
-    width: 80vmin;
-    display: block;
-    margin: 0 auto;
+  &__container-decor {
+    position: relative;
+    .request__main-img {
+      width: 80vmin;
+      display: block;
+      margin: 0 auto;
+    }
+    .decor {
+      position: absolute;
+    }
+    .request__container-decor img:nth-child(2) {
+      // 📌 cambiar de posición
+    }
+    .request__container-decor img:nth-child(3) {
+      // 📌 cambiar de posición
+    }
   }
 }

@@ -60,9 +60,17 @@
   margin: 0 auto;
 }
 
-.request__main-img {
+.request__container-decor {
+  position: relative;
+}
+
+.request__container-decor .request__main-img {
   width: 80vmin;
   display: block;
   margin: 0 auto;
+}
+
+.request__container-decor .decor {
+  position: absolute;
 }
 /*# sourceMappingURL=request.css.map */

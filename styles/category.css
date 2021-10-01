@@ -8,6 +8,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .category__div {
@@ -43,6 +44,13 @@
 
 .category__decor {
   position: absolute;
+  width: 100px;
+}
+
+.category__wave {
+  width: 180px;
   z-index: -1;
+  top: 20px;
+  right: 0px;
 }
 /*# sourceMappingURL=category.css.map */

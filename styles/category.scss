@@ -7,6 +7,7 @@ $blue-text: #0783f5;
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: 50px;
   &__div {
     padding-top: 20px;
     margin: 0 auto;
@@ -33,12 +34,14 @@ $blue-text: #0783f5;
   }
   &__decor {
     position: absolute;
+    width: 100px;
+  }
+  &__wave {
+    width: 180px;
     z-index: -1;
-    // .category__decor__square {
-    //   // 📌no se mueve
-    // }
-    // .category__decor__wave {
-    //   //📌 no se mueve
-    // }
+    top: 20px;
+    right: 0px;
+  }
+  &__square {
   }
 }

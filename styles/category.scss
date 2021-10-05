@@ -43,5 +43,9 @@ $blue-text: #0783f5;
     right: 0px;
   }
   &__square {
+    width: 180px;
+    z-index: -1;
+    bottom: 50px;
+    left: -60px;
   }
 }

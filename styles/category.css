@@ -53,4 +53,11 @@
   top: 20px;
   right: 0px;
 }
+
+.category__square {
+  width: 180px;
+  z-index: -1;
+  bottom: 50px;
+  left: -60px;
+}
 /*# sourceMappingURL=category.css.map */

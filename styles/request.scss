@@ -1,6 +1,7 @@
 // ✅ Request section
 $blue-text: #0783f5;
 .request {
+  position: relative;
   margin: 0auto;
   padding-top: 30px;
   // background-color: red;
@@ -60,14 +61,24 @@ $blue-text: #0783f5;
       display: block;
       margin: 0 auto;
     }
-    .decor {
-      position: absolute;
-    }
-    .request__container-decor img:nth-child(2) {
-      // 📌 cambiar de posición
-    }
-    .request__container-decor img:nth-child(3) {
-      // 📌 cambiar de posición
-    }
+  }
+  &__decor {
+    position: absolute;
+    width: 100px;
+  }
+  &__hole {
+    // 📌 cambiar de posición
+    width: 15vmin;
+    z-index: -1;
+    bottom: 70px;
+    right: 25px;
+  }
+
+  &__star {
+    // 📌 cambiar de posición
+    width: 100px;
+    // z-index: -1;
+    top: 240px;
+    left: 90px;
   }
 }

@@ -1,4 +1,5 @@
 .request {
+  position: relative;
   margin: 0auto;
   padding-top: 30px;
   position: relative;
@@ -81,7 +82,21 @@
   margin: 0 auto;
 }
 
-.request__container-decor .decor {
+.request__decor {
   position: absolute;
+  width: 100px;
+}
+
+.request__hole {
+  width: 15vmin;
+  z-index: -1;
+  bottom: 70px;
+  right: 25px;
+}
+
+.request__star {
+  width: 100px;
+  top: 240px;
+  left: 90px;
 }
 /*# sourceMappingURL=request.css.map */

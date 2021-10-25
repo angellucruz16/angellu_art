@@ -13,7 +13,7 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
   </head>
   <body>
-    <!-- S1 Header -->
+    <!--  ✅ S1 Header -->
     <header class="main-header">
       <svg
         class="main-header__menu"
@@ -133,6 +133,7 @@
         alt="star decor s3"
       />
     </section>
+
     <!-- ✅ S4 Slider -->
     <section class="slider">
       <div class="slider__title">
@@ -142,20 +143,35 @@
           for orders over $20k US
         </p>
       </div>
-      <!-- container -->
+
       <div class="slider__container">
+        <!-- button here -->
         <div class="slider__interaction">
+          <!-- arrow, images and dots -->
+          <img
+            class="slider__arrow"
+            id="before"
+            src="./img/s4-slider/s4-arrow-left.svg"
+            alt="left arrow"
+          />
           <div class="slider__mask">
-            <div class="slider_img-container">
+            <!-- only images -->
+            <div class="slider__img--container">
               <img
+                class="slider__img--show"
+                id="img-1"
                 src="./img/s4-slider/s4 img1.png"
                 alt="last recently added"
               />
               <img
+                class="slider__img"
+                id="img-2"
                 src="./img/s4-slider/s4 img2.png"
                 alt="second last recently added"
               />
               <img
+                class="slider__img"
+                id="img-3"
                 src="./img/s4-slider/s4 img3.png"
                 alt="third last recently added"
               />
@@ -166,7 +182,30 @@
             <div class="slider__dot"></div>
             <div class="slider__dot"></div>
           </div>
-          <!-- punticos aqui -->
+          <img
+            class="slider__arrow"
+            id="after"
+            src="./img/s4-slider/s4-arrow-right.svg"
+            alt="right arrow"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Thanks -->
+    <section class="thanks">
+      <div class="thanks__container">
+        <img src="./img/s5-thanks/img1s5.png" alt="" />
+        <div class="thanks__container--text">
+          <h2>
+            thank you for <br />
+            your support!
+          </h2>
+          <p>
+            Thanks to your support I can<br />continue working as a freelance<br />artist
+            and designer.
+          </p>
+          <p>🍉Follow me🍓</p>
         </div>
       </div>
     </section>

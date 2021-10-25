@@ -1,7 +1,8 @@
 // ✅ Slider section
-// 📌 variables no funcionan desde el main
+
 $dark-text: #1d3137;
 $blue-text: #0783f5;
+
 .slider {
   width: 100vw;
   display: flex;
@@ -10,6 +11,7 @@ $blue-text: #0783f5;
   margin-top: 60px;
   &__title {
     text-align: center;
+    margin-bottom: 40px;
   }
   &__title h2 {
     margin-bottom: 25px;
@@ -18,5 +20,40 @@ $blue-text: #0783f5;
   }
   &__title p {
     color: $blue-text;
+  }
+
+  &__container {
+    display: block;
+    min-height: 50vh;
+    max-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  &__interaction {
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    align-items: center;
+    gap: 1em;
+  }
+  &__img {
+    align-items: center;
+    margin: 0 auto;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+  }
+  &__img--show {
+    opacity: 1;
+    pointer-events: unset;
+  }
+  &__dot {
+    // 📌 no se muestran
+    background-color: rgb(190, 190, 190);
+    border-radius: 50%;
   }
 }

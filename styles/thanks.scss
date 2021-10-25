@@ -8,4 +8,30 @@ $blue-text: #0783f5;
   padding-top: 30px;
   // background-color: red;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  &__container--text {
+    text-align: center;
+  }
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__title img {
+    height: 40px;
+    width: 40px;
+  }
+  &__container--text h2 {
+    margin-top: 30px;
+    margin-left: 30px;
+    color: $dark-text;
+    margin-right: 30px;
+  }
+  &__container--text p {
+    margin-top: 20px;
+    color: $blue-text;
+  }
 }

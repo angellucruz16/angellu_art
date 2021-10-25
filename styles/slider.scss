@@ -1,0 +1,22 @@
+// ✅ Slider section
+// 📌 variables no funcionan desde el main
+$dark-text: #1d3137;
+$blue-text: #0783f5;
+.slider {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 60px;
+  &__title {
+    text-align: center;
+  }
+  &__title h2 {
+    margin-bottom: 25px;
+    size: 2em;
+    color: $dark-text;
+  }
+  &__title p {
+    color: $blue-text;
+  }
+}

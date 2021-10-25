@@ -1,3 +1,4 @@
+// ✅ Main section
 // Variables
 $dark-text: #1d3137;
 $blue-text: #0783f5;
@@ -10,6 +11,7 @@ $p-text: 0.5em;
 @import "hero";
 @import "category";
 @import "request";
+@import "slider";
 // code
 * {
   margin: 0;

@@ -1,0 +1,42 @@
+// ✅ Gallery Header
+// Variables
+$dark-text: #1d3137;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.main-header {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em; //gap is the space between rows and columns
+}
+.hidden {
+  display: none;
+}
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 3em;
+    color: $dark-text;
+    margin-bottom: 30px;
+  }
+  &__sub {
+    color: $dark-text;
+  }
+  &__decor {
+    position: absolute;
+    width: 13vh;
+    right: -30px;
+  }
+}

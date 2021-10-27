@@ -4,6 +4,11 @@ $dark-text: #1d3137;
 #description {
   position: absolute;
 }
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
 .product {
   width: 40vw;
   height: 45vw;

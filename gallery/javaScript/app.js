@@ -1,6 +1,6 @@
 // ✅♍️ product js
 
-const artWorks = [
+const products = [
 {
     title: "title",
     price: "40,99",
@@ -51,7 +51,25 @@ const productSection = document.getElementById("products");
 const productTemplate = (item) => {
     // 1. Creating our element to edit html
     const product = document.createElement("a");
-    product.className ="product";
+    product.className = "product";
+
+    let tagHTML;
+    let tagCollection;
+    let tagStock;
+
+    if(item.collection) {
+      tagCollection = `<span class="product__tag paragraph" id="description"
+      >collection</span>`; 
+    } else {
+      tagCollection = ``
+    }
+
+    if(item.inStock) {
+      tagStock = `<h2 class="product__available--sold-out">Sold out</h2>`;
+    } else {
+      tagStock = ``;
+    }
+
     product.innerHTML = `
     <img
     src="${item.image}"
@@ -59,10 +77,8 @@ const productTemplate = (item) => {
     class="product__img"
   />
   <div class="product__description">
-    <h2 class="product__available--sold-out">Sold out</h2>
-    <span class="product__tag paragraph" id="description"
-      >collection</span
-    >
+    ${tagStock}
+    ${tagCollection}
     <h3 class="product__title title" id="description">${item.title}</h3>
     <button>
       <i
@@ -76,4 +92,10 @@ const productTemplate = (item) => {
 //   🉐no recuerdo como era la relacion entre estos dos elementos
   productSection.appendChild(product);
 
-}
+};
+
+// ✅♍️ go over our array and create foreach
+
+products.forEach(product => {
+    productTemplate(product);
+});

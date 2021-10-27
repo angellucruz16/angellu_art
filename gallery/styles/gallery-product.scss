@@ -1,0 +1,65 @@
+// ✅ Gallery Products
+// Variables
+$dark-text: #1d3137;
+#description {
+  position: absolute;
+}
+.product {
+  width: 40vw;
+  height: 45vw;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  position: relative;
+  &__img {
+    width: 40vw;
+    object-fit: contain; //nos ayuda a mantener las dimensiones
+  }
+  &__available--sold-out {
+    font-weight: bold;
+    position: absolute;
+    text-decoration: none;
+    color: #430bee;
+    background: #ffbd13;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    top: 80px;
+  }
+
+  &__description {
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+  &__cart-btn {
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.452);
+    text-shadow: 0 0 0.5em rgb(238, 118, 5);
+    &--added {
+      top: 20px;
+      right: 20px;
+      background: #ffbd13;
+    }
+  }
+  &__tag {
+    font-weight: bolder;
+    font-size: 0.5em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 13px;
+    padding-left: 13px;
+    border-radius: 50px;
+    background: #ffbd13;
+    bottom: 45px;
+  }
+  &__title {
+    text-shadow: 0 0 0.5em rgb(101, 101, 139);
+    text-decoration: none;
+    color: white;
+    bottom: 10px;
+    font-size: 1.5em;
+  }
+}

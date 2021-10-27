@@ -8,6 +8,7 @@ $medium: 1.5em;
 $p-text: 0.5em;
 // imports
 @import "gallery-header";
+@import "gallery-product";
 // code----
 * {
   margin: 0;
@@ -18,7 +19,6 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
 .title {
   font-family: bely-display, sans-serif;
   letter-spacing: 2px;

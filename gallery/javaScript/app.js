@@ -2,6 +2,7 @@
 
 const products = [
 {
+    id: 1,
     title: "title",
     price: "40,99",
     image: "../img/s3-products/s3-img.png",
@@ -15,6 +16,7 @@ const products = [
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 },
 {
+    id: 2,
     title: "title",
     price: "40,99",
     image: "../img/s3-products/s3-img.png",
@@ -28,6 +30,7 @@ const products = [
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 },
 {
+    id: 3,
     title: "title",
     price: "40,99",
     image: "../img/s3-products/s3-img.png",
@@ -41,6 +44,8 @@ const products = [
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 }
 ];
+const cart = [];
+
 //   🉐no recuerdo como era la relacion entre estos dos elementos
 const productSection = document.getElementById("products");
 
@@ -53,7 +58,8 @@ const productTemplate = (item) => {
     const product = document.createElement("a");
     product.className = "product";
 
-    let tagHTML;
+    product.setAttribute("href", `./product.html?id=${item.id}`);
+  
     let tagCollection;
     let tagStock;
 
@@ -61,7 +67,7 @@ const productTemplate = (item) => {
       tagCollection = `<span class="product__tag paragraph" id="description"
       >collection</span>`; 
     } else {
-      tagCollection = ``
+      tagCollection = ``;
     }
 
     if(item.inStock) {
@@ -91,6 +97,19 @@ const productTemplate = (item) => {
   `;
 //   🉐no recuerdo como era la relacion entre estos dos elementos
   productSection.appendChild(product);
+
+// ✅♍️ creating cart button logic and push
+  const productCart = product.querySelector (".product__cart");
+  productCart.addEventListener("click", e => {
+    e.preventDefault;
+    const productAdded = {
+      id: item.id,
+      name: item.name,
+      price: item.price,
+      quantity: item.quantity,
+    }
+    cart.push(productAdded);
+  });
 
 };
 

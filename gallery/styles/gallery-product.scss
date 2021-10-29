@@ -7,14 +7,13 @@ $orange-btn: #f2994a;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   padding: 1em;
 }
 .card {
   display: flex;
   flex-direction: column;
-  width: 250px;
+
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
   overflow: hidden;
@@ -25,16 +24,17 @@ body {
   &__header {
     position: relative;
     overflow: hidden;
-    height: 150px;
+    height: 250px;
   }
   &__header img {
     position: absolute;
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
     z-index: 2;
   }
   &__out-stock {
+    display: none;
     position: absolute;
     z-index: 8;
     color: rgb(255, 255, 255);
@@ -42,7 +42,7 @@ body {
     padding: 1em;
     border-radius: 50px;
     left: 50%;
-    top: 50%;
+    top: 55%;
     text-align: center;
     transform: translate(-50%, -50%);
   }
@@ -52,13 +52,23 @@ body {
     padding: 0 1em;
     align-items: center;
     gap: 0.5em;
-    /* background-color: red; */
     width: 100%;
     z-index: 5;
     position: absolute;
     right: 0;
     top: 1em;
     position: relative;
+    color: white;
+  }
+  &__product-action button {
+    background: rgba(255, 255, 255, 0.384);
+    color: inherit;
+    border: none;
+    border-radius: 20px;
+    padding: 0.3em;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
   }
   &__product-collection {
     background-color: $blue-text;
@@ -82,5 +92,33 @@ body {
   &__fetails span {
     color: $blue-text;
     // 🎃 no me funciona el color
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.products {
+  // background: #0783f5;
+  width: 100%;
+  max-width: 1500px;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.out-of-stock {
+  .card__header img {
+    opacity: 0.5;
+  }
+  .card__product-action {
+    display: none;
+  }
+  .card__out-stock {
+    display: block;
   }
 }

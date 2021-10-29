@@ -57,29 +57,32 @@
     <!--  ✅♍️ S2 sort by  -->
 
     <!--  ✅♍️ S3 product catalogue  -->
-    <div class="products" id="product"></div>
-    <script src="./javaScript/app.js"></script>
+    <div class="card">
+      <header class="card__header">
+        <a href="#">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-pZMZb0rC6qI%2FUTHNYH7mi7I%2FAAAAAAAAAPA%2Fm_VYPjtLG8w%2Fs1600%2Fcat.jpeg&f=1&nofb=1"
+            alt=""
+          />
+          <div class="card__out-stock">
+            <span class="title">Out of Stock</span>
+          </div>
+        </a>
+        <div class="card__product-action">
+          <div class="card__product-collection">
+            <span class="paragraph">collection</span>
+          </div>
+          <button>
+            <img src="./img/s3-products/s3-bag.svg" alt="bag icon" />
+          </button>
+        </div>
+      </header>
+      <section class="card__details">
+        <h1 class="title">title</h1>
+        <span class="paragraph">$20.99</span>
+      </section>
+    </div>
+    <!--  ✅♍️ js  -->
+    <!-- <script src="./javaScript/app.js"></script> -->
   </body>
 </html>
-
-<!-- <a href="#" class="product">
-    <img
-      src="./img/s3-products/s3-img.png"
-      alt="product image"
-      class="product__img"
-    />
-    <div class="product__description">
-      <h2 class="product__available--sold-out">Sold out</h2>
-      <span class="product__tag paragraph" id="description"
-        >collection</span
-      >
-      <h3 class="product__title title" id="description">Title</h3>
-      <button>
-        <i
-          class="product__cart-btn bx-border bx bx-cart bx-burst-hover"
-          id="description"
-          style="color: #f2b30f"
-        ></i>
-      </button>
-    </div>
-  </a> -->

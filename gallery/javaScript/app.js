@@ -5,7 +5,7 @@ const products = [
     id: 1,
     title: "title",
     price: "40,99",
-    image: "../img/s3-products/s3-img.png",
+    image: "./img/s3-products/s3-img.png",
     type: "print",
     isBestSeller: true,
     collection: true,
@@ -19,7 +19,7 @@ const products = [
     id: 2,
     title: "title",
     price: "40,99",
-    image: "../img/s3-products/s3-img.png",
+    image: "./img/s3-products/s3-img.png",
     type: "sticker",
     isBestSeller: false,
     collection: false,
@@ -33,7 +33,7 @@ const products = [
     id: 3,
     title: "title",
     price: "40,99",
-    image: "../img/s3-products/s3-img.png",
+    image: "./img/s3-products/s3-img.png",
     type: "merch",
     isBestSeller: true,
     collection: true,
@@ -47,7 +47,7 @@ const products = [
 const cart = [];
 
 //   🉐no recuerdo como era la relacion entre estos dos elementos
-const productSection = document.getElementById("products");
+const productSection = document.getElementById("product");
 
 
 
@@ -86,12 +86,8 @@ const productTemplate = (item) => {
     ${tagStock}
     ${tagCollection}
     <h3 class="product__title title" id="description">${item.title}</h3>
-    <button>
-      <i
-        class="product__cart-btn bx-border bx bx-cart bx-burst-hover"
-        id="description"
-        style="color: #f2b30f"
-      ></i>
+    <button class="product__cart-btn" id="description">
+    <img src="./img/s3-products/s3-bag.svg" alt="bag">
     </button>
   </div>
   `;
@@ -99,7 +95,7 @@ const productTemplate = (item) => {
   productSection.appendChild(product);
 
 // ✅♍️ creating cart button logic and push
-  const productCart = product.querySelector (".product__cart");
+  const productCart = product.querySelector (".product__cart-btn");
   productCart.addEventListener("click", e => {
     e.preventDefault;
     const productAdded = {
@@ -110,7 +106,6 @@ const productTemplate = (item) => {
     }
     cart.push(productAdded);
   });
-
 };
 
 // ✅♍️ go over our array and create foreach

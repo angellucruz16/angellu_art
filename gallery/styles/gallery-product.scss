@@ -61,7 +61,7 @@ body {
     color: white;
   }
   &__product-action button {
-    background: rgba(255, 255, 255, 0.384);
+    background: rgba(196, 196, 196, 0.479);
     color: inherit;
     border: none;
     border-radius: 20px;
@@ -69,8 +69,13 @@ body {
     font: inherit;
     cursor: pointer;
     outline: inherit;
+
+    &:disabled {
+      background-color: rgba(255, 208, 0, 0.384);
+    }
   }
   &__product-collection {
+    display: none;
     background-color: $blue-text;
     border-radius: 300px;
     font-size: 0.8em;
@@ -119,6 +124,12 @@ body {
     display: none;
   }
   .card__out-stock {
+    display: block;
+  }
+}
+
+.collection {
+  .card__product-collection {
     display: block;
   }
 }

@@ -383,8 +383,9 @@ const cart = [];
 const productSection = document.getElementById("products");
 // 🍓 function to render cards
 const productTemplate = (item) => {
-    const product = document.createElement("div");
+    const product = document.createElement("a");
     product.classList.add("card");
+    //product.setAttribute("href", `#`);
     product.setAttribute("href", `./product.html?id=${item.id}`);
 
     if(!item.inStock){
@@ -398,7 +399,8 @@ const productTemplate = (item) => {
     let buttonHtml;
 
     if (isAdded) {
-      buttonHtml = `<button class="card__cart-btn" disabled>
+      console.log('added')
+      buttonHtml = `<button class="card__cart-btn">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
 </svg>
@@ -434,12 +436,15 @@ const productTemplate = (item) => {
     <h1 class="title">${item.title}</h1>
     <span class="paragraph">${item.price}</span>
   </section>`;
+
   productSection.appendChild(product);
 
   // ✅♍️ Button Logic
   const productCart = product.querySelector(".card__cart-btn");
   productCart.addEventListener("click", e =>{
-    e.preventDefault;
+    console.log("click");
+    e.preventDefault();
+    e.stopImmediatePropagation()
     const productAdded = {
       id: item.id,
       image: item.image,
@@ -448,7 +453,12 @@ const productTemplate = (item) => {
       quantity: item.quantity,
     }
     cart.push(productAdded);
-    productCart.setAttribute("disabled", true);
+    console.log(cart);
+    productCart.classList.toggle("card__product-action--added");
+    
+  productCart.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+</svg>`;
   });
 }
 
@@ -463,7 +473,7 @@ filterByCategory.addEventListener("change", e =>{
   let filteredProductByCategory;
   
   productSection.innerHTML = "";
-  
+
   if (category != ""){
     filteredProductByCategory = products.filter((product) => product.type === category);
   } else {
@@ -474,11 +484,17 @@ filterByCategory.addEventListener("change", e =>{
       productTemplate(product);
     });
 
-    // 🍓 "recorro" the products on my array products and call the function to render them
-    products.forEach(product => {
-      productTemplate(product);
-    });
   
   console.log(filteredProductByCategory);
 
 });
+
+    // 🍓 "recorro" the products on my array products and call the function to render them
+
+products.forEach(product => {
+  productTemplate(product);
+});
+
+console.log(filteredProductByCategory);
+
+

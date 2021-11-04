@@ -10,6 +10,7 @@ body {
 }
 
 .card {
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +77,7 @@ body {
   color: white;
 }
 
-.card__product-action button {
+.card__product-action .card__cart-btn {
   background: rgba(196, 196, 196, 0.479);
   color: inherit;
   border: none;
@@ -87,8 +88,13 @@ body {
   outline: inherit;
 }
 
-.card__product-action button:disabled {
-  background-color: rgba(255, 208, 0, 0.384);
+.card__product-action--added .card__cart-btn {
+  /* background: rgba(255, 208, 0, 0.384) !important;*/
+  width: 100px;
+}
+
+.card .card__product-action--added {
+  background: rgba(255, 208, 0, 0.384) !important;
 }
 
 .card__product-collection {

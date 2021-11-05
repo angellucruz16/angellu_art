@@ -385,7 +385,6 @@ const productSection = document.getElementById("products");
 const productTemplate = (item) => {
     const product = document.createElement("a");
     product.classList.add("card");
-    //product.setAttribute("href", `#`);
     product.setAttribute("href", `./product.html?id=${item.id}`);
 
     if(!item.inStock){
@@ -401,7 +400,7 @@ const productTemplate = (item) => {
     if (isAdded) {
       console.log('added')
       buttonHtml = `<button class="card__cart-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
 </svg>
 </button>`
@@ -455,46 +454,52 @@ const productTemplate = (item) => {
     cart.push(productAdded);
     console.log(cart);
     productCart.classList.toggle("card__product-action--added");
-    
-  productCart.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-</svg>`;
+    if (isAdded) {
+      productCart.innerHTML =`<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+    </svg>`;
+    } else { 
+      productCart.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+      </svg>`;
+    }
   });
 }
 
 // ✅♍️ Filter logic here
 const filterByCategory = document.getElementById("categories");
-//🔸 para los select se usa change
-filterByCategory.addEventListener("change", e =>{
-  const category = filterByCategory.value;
-  
+
+const loadProducts = () => {
+  // 🍓 Pickup categorie selec value
+  const category = filterByCategorySelect.value || "";
+  // const order = orderBySelect.value;
+
   // 🍓 Clean container of products
-  
-  let filteredProductByCategory;
-  
   productSection.innerHTML = "";
+
+  let filteredProductByCategory;
 
   if (category != ""){
     filteredProductByCategory = products.filter((product) => product.type === category);
   } else {
     filteredProductByCategory = products;
   }
-    
-    filteredProductByCategory.forEach((product) => {
-      productTemplate(product);
-    });
 
-  
-  console.log(filteredProductByCategory);
+  // if (order === "Higher to lower"
 
+  filteredProductByCategory.forEach(product => {
+    productTemplate(product);
+  });
+}
+//🔸 para los select se usa change
+filterByCategory.addEventListener("change", e =>{
+  loadProducts();
 });
-
-    // 🍓 "recorro" the products on my array products and call the function to render them
 
 products.forEach(product => {
   productTemplate(product);
 });
-
+// 🍓 "recorro" the products on my array products and call the function to render them
 console.log(filteredProductByCategory);
 
 

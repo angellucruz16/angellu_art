@@ -1,0 +1,27 @@
+// ✅ Product catalogue Filters section
+// Variables
+$blue-text: #0783f5;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.filters {
+  label {
+    color: $blue-text;
+    font-weight: 900;
+  }
+  &__select {
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 1em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #f9f4f1;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  }
+}

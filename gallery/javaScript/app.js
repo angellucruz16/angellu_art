@@ -468,10 +468,9 @@ const productTemplate = (item) => {
 
 // ✅♍️ Filter logic here
 const filterByCategory = document.getElementById("categories");
-
 const loadProducts = () => {
   // 🍓 Pickup categorie selec value
-  const category = filterByCategorySelect.value || "";
+  const category = filterByCategory.value || "";
   // const order = orderBySelect.value;
 
   // 🍓 Clean container of products
@@ -494,12 +493,12 @@ const loadProducts = () => {
 //🔸 para los select se usa change
 filterByCategory.addEventListener("change", e =>{
   loadProducts();
+  console.log("hola");
 });
 
 products.forEach(product => {
   productTemplate(product);
 });
 // 🍓 "recorro" the products on my array products and call the function to render them
-console.log(filteredProductByCategory);
 
 

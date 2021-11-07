@@ -35,10 +35,6 @@
 }
 
 .slider__interaction {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20px 1fr 20px;

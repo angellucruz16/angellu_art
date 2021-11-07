@@ -28,6 +28,29 @@ body {
   display: none;
 }
 
+.pov {
+  padding: 40px;
+}
+
+.pov__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pov__art-name {
+  color: #0783f5;
+  font-weight: 900;
+}
+
+.pov img {
+  padding: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;

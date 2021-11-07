@@ -12,6 +12,8 @@ console.log(product);
 const povSection = document.querySelector(".pov");
 const povTemplate = (item) => {
         const pov = document.createElement ("a");
+        pov.classList.add("pov__container");
+        pov.classList.add("paragraph");
         pov.innerHTML = `
         <p>artwork</p>
         <img src="./img/s1-header/pov-arrow.svg" alt="pov arrow" />

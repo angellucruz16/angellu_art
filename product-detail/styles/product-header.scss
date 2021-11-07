@@ -1,3 +1,7 @@
+// ✅ Category section
+// 📌 variables no funcionan desde el main
+$dark-text: #1d3137;
+$blue-text: #0783f5;
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +20,21 @@ body {
 }
 .hidden {
   display: none;
+}
+// ✅ pov section
+// 📌 no realiza cambios
+.pov {
+  padding: 40px;
+  &__container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  &__art-name {
+    color: $blue-text;
+    font-weight: 900;
+  }
+  img {
+    padding: 20px;
+  }
 }

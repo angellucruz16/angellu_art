@@ -27,7 +27,9 @@ select {
   }
   &__main-img {
     width: 50vw;
+    height: 461px;
     border-bottom-right-radius: 30%;
+    object-fit: cover;
   }
   &__decor--hole {
     position: absolute;
@@ -39,6 +41,7 @@ select {
     justify-content: space-between;
     margin-top: 30px;
     img {
+      object-fit: cover;
       width: 13vw;
       border-radius: 20px;
     }

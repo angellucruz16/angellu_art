@@ -12,13 +12,17 @@ const products = [
     collectionName: "Beauty",
     inStock: true,
     isAdded: false,
-    size: "13x16",
+    size: [
+        "13x16",
+        "15x15",
+        "25x13"
+    ],
     quantity: "1",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
      images: [
         "../illustrations/Juicy.PNG",
          "../illustrations/GoldBlueStickers.PNG",
-         "../illustrations/Juicy.PNG" ]
+         "../illustrations/Stella.PNG" ]
  },
 {
     id: 2,

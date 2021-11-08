@@ -47,19 +47,41 @@ console.log(product.images);
 // ✅♍️ Images select Logic
 const gallery = document.getElementById("gallerySelect");
 const createGallery = () => {
+
+        gallerySelect.innerHTML = `<img src="${product.image}">`;
+
         gallerySelect.innerHTML = `
           <img src="${product.images[0]}" alt="${product.images[0]}">
           <img src="${product.images[1]}" alt="${product.images[1]}">
           <img src="${product.images[2]}" alt="${product.images[2]}">
-          `
+          `;
         //   gallerySelect.appendChild(gallery);
 
           // 🍓 selected image logic & click
           const productGalleryImages = document.querySelector(".product__images-preview > .product__select-img-container");
         
           productGalleryImages.addEventListener("click", e => {
-                 const imageSource = e.target.currentSrc;
-                 console.log("hola");    
+                if (e.target.tagName === "IMG"){
+                        const imageSource = e.target.currentSrc;
+                        productImage.setAttribute("src", imageSource);
+                };
           });
         };
-createGallery();
+
+        if (product.images){
+                createGallery();
+        };
+
+// ✅♍️ Size Select Logic
+const sizes = document.getElementById("sizes");
+const createSelectSize = () => {
+
+        sizes.innerHTML = `
+        <option value="${product.size[0]}">${product.size[0]}</option>
+        <option value="${product.size[1]}">${product.size[1]}</option>
+        <option value="${product.size[2]}">${product.size[2]}</option>
+        `;
+       
+
+};
+createSelectSize();

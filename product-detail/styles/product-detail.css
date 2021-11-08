@@ -86,7 +86,10 @@ select {
 
 .product__main-img {
   width: 50vw;
+  height: 461px;
   border-bottom-right-radius: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .product__decor--hole {
@@ -106,6 +109,8 @@ select {
 }
 
 .product__select-img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 13vw;
   border-radius: 20px;
 }

@@ -24,3 +24,21 @@ const povTemplate = (item) => {
 };
 
 povTemplate(product); 
+
+
+// ✅♍️ Main image logic
+const productImage = document.getElementById("productImage");
+productImage.setAttribute("src", product.image);
+
+
+// ✅♍️ Title logic
+const productName = document.getElementById("productName");
+productName.innerText = product.title;
+
+// ✅♍️ Product Description
+const productPrice = document.getElementById("productPrice");
+productPrice.innerText = `$ ${product.price}`;
+
+// ✅♍️ Product Description
+const productDescription = document.getElementById("productDescription");
+productDescription.innerText = product.description;

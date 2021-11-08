@@ -27,7 +27,8 @@ body {
   padding: 40px;
   &__container {
     display: flex;
-    width: 100%;
+    width: 50%;
+    margin-left: 10%;
     align-items: center;
   }
   &__art-name {

@@ -42,3 +42,17 @@ productPrice.innerText = `$ ${product.price}`;
 // ✅♍️ Product Description
 const productDescription = document.getElementById("productDescription");
 productDescription.innerText = product.description;
+
+console.log(product.images);
+
+// ✅♍️ Images select Logic
+const gallerySelect = document.getElementById("gallerySelect");
+const createGallery = () => {
+        gallerySelect.innerHTML = `
+          <img src="${product.images[0]}" alt="${product.images[0]}">
+          <img src="${product.images[1]}" alt="${product.images[1]}">
+          <img src="${product.images[2]}" alt="${product.images[2]}">
+          `
+          gallerySelect.appendChild(gallery);
+        };
+createGallery();

@@ -20,7 +20,6 @@ const povTemplate = (item) => {
         <p class="pov__art-name"> ${item.title}</p>
         `;
   povSection.appendChild(pov);
-  console.log("hola");
 };
 
 povTemplate(product); 
@@ -46,13 +45,21 @@ productDescription.innerText = product.description;
 console.log(product.images);
 
 // ✅♍️ Images select Logic
-const gallerySelect = document.getElementById("gallerySelect");
+const gallery = document.getElementById("gallerySelect");
 const createGallery = () => {
         gallerySelect.innerHTML = `
           <img src="${product.images[0]}" alt="${product.images[0]}">
           <img src="${product.images[1]}" alt="${product.images[1]}">
           <img src="${product.images[2]}" alt="${product.images[2]}">
           `
-          gallerySelect.appendChild(gallery);
+        //   gallerySelect.appendChild(gallery);
+
+          // 🍓 selected image logic & click
+          const productGalleryImages = document.querySelector(".product__images-preview > .product__select-img-container");
+        
+          productGalleryImages.addEventListener("click", e => {
+                 const imageSource = e.target.currentSrc;
+                 console.log("hola");    
+          });
         };
 createGallery();

@@ -49,14 +49,68 @@
       <!-- here we created the js logic -->
     </div>
 
-    <!--  ✅♍️ S2 producto Main -->
+    <!--  ✅♍️ S2 product Main -->
     <section class="product">
-      <main class="product__images-preview container"></main>
-      <div class="product__info">
-        <h1>title</h1>
-      </div>
-    </section>
+      <main class="product__images-preview container">
+        <img class="product__main-img" src="../illustrations/JazminBeautyCollection.PNG" alt="Main img">
+        <div class="product__select-img-container">
+          <img src="../illustrations/Juicy.PNG" alt="">
+          <img src="../illustrations/Juicy.PNG" alt="">
+          <img src="../illustrations/Juicy.PNG" alt="">
+        </div>
+        <img class="product__decor--hole" src="./img/s2- product-images/s2-hole-decor.svg" alt="hole decor">
+      </main>
 
+      <slider class="product__info">
+      <div class="product__info-header">
+        <h1 class="product__title title">Greedy</h1>
+        <div class="product__price paragraph">
+          <h3>US Price</h3>
+          <p>$30.000</p>
+        </div>
+        <div class="product__edit-info">
+          <div class="product__size paragraph">
+            <h3>size</h3>
+            <select name="size" id="size">
+              <option value="11x11">11x11</option>
+              <option value="13x15">13x15</option>
+              <option value="25x13">25x13</option>
+            </select>
+          </div>
+          <div class="product__quantity paragraph">
+            <h3>Quantity</h3>
+            <select name="quantity" id="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+        <button class="product__add-to-cart-btn">ADD TO CART</button>
+        <hr class="line"></hr>
+      </div>
+
+      <div class="product__info-bottom paragraph">
+        <h3>Description</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst, accumsan per sociosqu nibh ante porta senectus. Nam semper velit metus.</p>
+        <h3>Specifications</h3>
+        <ul>
+          <li>Specifications</li>
+          <li>Specifications</li>
+          <li>Specifications</li>
+          <li>Specifications</li>
+          <li>Specifications</li>
+        </ul>
+      </div>
+    </slider>
+    </section>
     <!--  ✅♍️ JS -->
     <!-- 🍓 all products array -->
     <script src="../gallery/javaScript/products.js"></script>

@@ -1,0 +1,19 @@
+// ✅ Gallery Header
+// Variables
+$dark-text: #1d3137;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.product-view {
+  &__template--img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}

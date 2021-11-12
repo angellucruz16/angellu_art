@@ -5,9 +5,9 @@ const getMyCart = () =>{
   const cart = localStorage.getItem("cart");
   return cart ? JSON.parse(cart) : [];
 };
-// 🥐🥐🥐🥐🥐🥐
+
 const cart = getMyCart();
-console.log(cart);
+
  
 // 🍓 Get element card from html--------------------------------------------
 const productSection = document.getElementById("products");
@@ -15,7 +15,7 @@ const productSection = document.getElementById("products");
 const productTemplate = (item) => {
     const product = document.createElement("a");
     product.classList.add("card");
-    product.setAttribute("href", `./product.html?id=${item.id}`);
+    product.setAttribute("href", `../product-detail/index.html?id=${item.id}`);
 
     if(!item.inStock){
       product.classList.add('out-of-stock');
@@ -45,7 +45,6 @@ const productTemplate = (item) => {
     // ✅♍️ Change HTML--------------------------------------------
     product.innerHTML = `
     <header class="card__header">
-    <a href="./product.html?id=${item.id}">
       <img
         src="${item.image}"
         alt="${item.image}"
@@ -53,7 +52,6 @@ const productTemplate = (item) => {
       <div class="card__out-stock">
         <span class="title">Out of Stock</span>
       </div>
-    </a>
     <div class="card__product-action">
       <div class="card__product-collection">
         <span class="paragraph">collection</span>
@@ -79,11 +77,11 @@ const productTemplate = (item) => {
       image: item.image,
       title: item.title,
       price: item.price,
-      quantity: item.quantity,
+      quantity: parseInt(item.quantity),
     }
     cart.push(productAdded);
-    // 🥐🥐🥐🥐🥐🥐
-    localStorage.setItem("cat",JSON.stringify(cart));
+    
+    localStorage.setItem("cart",JSON.stringify(cart));
 
     productCart.classList.toggle("card__product-action--added");
     if (isAdded) {
@@ -125,7 +123,6 @@ const loadProducts = () => {
 //🔸 para los select se usa change
 filterByCategory.addEventListener("change", e =>{
   loadProducts();
-  console.log("hola");
 });
 
 products.forEach(product => {

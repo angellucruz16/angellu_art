@@ -21,8 +21,8 @@ const products = [
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
      images: [
         "../illustrations/Juicy.PNG",
-         "../illustrations/GoldBlueStickers.PNG",
-         "../illustrations/Stella.PNG" ]
+         "../illustrations/mockup detail/Juicy-m1.png",
+         "../illustrations/mockup detail/Juicy-m2.png" ]
  },
 {
     id: 2,
@@ -41,7 +41,11 @@ const products = [
       "15x7"
   ],
     quantity: "1",
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+    images: [
+      "../illustrations/GoldBlueStickers.png",
+       "../illustrations/mockup detail/Juicy-m1.png",
+       "../illustrations/mockup detail/Juicy-m2.png" ]
 },
 {
     id: 3,
@@ -60,7 +64,11 @@ const products = [
       "25x13"
   ],
     quantity: "1",
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+    images: [
+      "../illustrations/Honey.PNG",
+       "../illustrations/mockup detail/Honey-m1.png",
+       "../illustrations/mockup detail/Honey-m2.png" ]
 },
 {
   id: 4,
@@ -79,7 +87,11 @@ const products = [
     "25x13"
 ],
   quantity: "1",
-  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+  images: [
+    "../illustrations/Stella.PNG",
+     "../illustrations/mockup detail/Stella-m1.png",
+     "../illustrations/mockup detail/Stella-m2.png" ]
 },
 {
   id: 5,
@@ -98,7 +110,11 @@ const products = [
     "25x13"
 ],
   quantity: "1",
-  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+  images: [
+    "../illustrations/AliceOne.PNG",
+     "../illustrations/mockup detail/AliceOne-m1.png",
+     "../illustrations/mockup detail/AliceOne-m2.png" ]
 },
 {
   id: 6,
@@ -116,7 +132,11 @@ const products = [
     "15x15",
     "25x13"
 ],  quantity: "1",
-  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+  images: [
+    "../illustrations/AliceTwo.PNG",
+     "../illustrations/mockup detail/AliceTwo-m1.png",
+     "../illustrations/mockup detail/AliceTwo-m2.png" ]
 },
 {
   id: 7,
@@ -134,7 +154,11 @@ const products = [
     "medium",
     "large"
 ],  quantity: "1",
-  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+  images: [
+    "../illustrations/BagMerch.PNG",
+     "empty",
+     "empty" ]
 },
 {
   id: 8,
@@ -153,7 +177,11 @@ const products = [
     "25x13"
 ],
   quantity: "1",
-  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+  images: [
+    "../illustrations/Golden.PNG",
+     "../illustrations/mockup detail/Golden-m1.png",
+     "../illustrations/mockup detail/Golden-m2.png" ]
 },
 {
   id: 9,
@@ -172,7 +200,11 @@ const products = [
     "25x13"
 ],
   quantity: "1",
-  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+  images: [
+    "../illustrations/Lady_BeautyCollection.PNG",
+     "../illustrations/mockup detail/Lady_BeautyCollection-m1.png",
+     "../illustrations/mockup detail/Lady_BeautyCollection-m2.png" ]
 },
 {
   id: 10,
@@ -191,7 +223,11 @@ const products = [
     "25x13"
 ],
   quantity: "1",
-  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+  images: [
+    "../illustrations/JazminBeautyCollection.PNG",
+     "../illustrations/mockup detail/JazminBeautyCollection-m1.png",
+     "../illustrations/mockup detail/JazminBeautyCollection-m2.png" ]
 },
 {
 id: 11,
@@ -210,7 +246,11 @@ size: [
   "25x13"
 ],
 quantity: "1",
-description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+images: [
+  "../illustrations/Samantha_BeautyCollection.PNG",
+   "../illustrations/mockup detail/Samantha_BeautyCollection-m1.png",
+   "../illustrations/mockup detail/Samantha_BeautyCollection-m2.png" ]
 },
 {
   id: 12,
@@ -229,7 +269,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
     "25x13"
 ],
   quantity: "1",
-  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+  images: [
+    "../illustrations/RachelBeautyCollection.PNG",
+     "../illustrations/mockup detail/RachelBeautyCollection-m1.png",
+     "../illustrations/mockup detail/RachelBeautyCollection-m2.png" ]
   },
   {
     id: 13,
@@ -248,7 +292,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
       "15x7"
   ],
     quantity: "1",
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+    images: [
+      "../illustrations/GambitStickers-4.PNG",
+       "../illustrations/GambitSticker-1.png",
+       "../illustrations/GambitSticker-3.png" ]
     },
     {
       id: 14,
@@ -267,7 +315,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
         "15x7"
     ],
       quantity: "1",
-      description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+      description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+      images: [
+        "../illustrations/MinimalistRhinoStamp.PNG",
+         "../illustrations/RhinoStamp1.png",
+         "../illustrations/RhinoStamp2.png" ]
       },
       {
         id: 15,
@@ -286,7 +338,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
           "15x7"
       ],
         quantity: "1",
-        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+        images: [
+          "../illustrations/MaximalistRhinoStamp.PNG",
+           "../illustrations/RhinoStamp1.png",
+           "../illustrations/RhinoStamp2.png" ]
         },
         {
           id: 16,
@@ -305,7 +361,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
             "25x13"
         ], 
           quantity: "1",
-          description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+          description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+          images: [
+            "../illustrations/Chill.PNG",
+             "../illustrations/mockup detail/Chill-m1.png",
+             "../illustrations/mockup detail/Chill-m2.png" ]
           },
           {
             id: 17,
@@ -324,7 +384,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
               "25x13"
           ],    
             quantity: "1",
-            description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+            description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+            images: [
+              "../illustrations/Sunday.PNG",
+               "../illustrations/mockup detail/Sunday-m1.png",
+               "../illustrations/mockup detail/Sunday-m2.png" ]
             },
             {
               id: 18,
@@ -343,7 +407,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                 "25x13"
             ],    
               quantity: "1",
-              description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+              description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+              images: [
+                "../illustrations/Classy.PNG",
+                 "../illustrations/mockup detail/Classy-m1.png",
+                 "../illustrations/mockup detail/Classy-m2.png" ]
               },
               {
                 id: 19,
@@ -362,7 +430,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                   "25x13"
               ],    
                 quantity: "1",
-                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+                images: [
+                  "../illustrations/Summer.PNG",
+                   "../illustrations/mockup detail/Summer-m1.png",
+                   "../illustrations/mockup detail/Summer-m2.png" ]
                 },
                 {
                   id: 20,
@@ -381,7 +453,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                     "25x13"
                 ],    
                   quantity: "1",
-                  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+                  description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+                  images: [
+                    "../illustrations/SafariPastel.PNG",
+                     "../illustrations/mockup detail/SafariPastel-m1.png",
+                     "../illustrations/mockup detail/SafariPastel-m2.png" ]
                   },
                   {
                     id: 21,
@@ -400,7 +476,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                       "25x13"
                   ],    
                     quantity: "1",
-                    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+                    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+                    images: [
+                      "../illustrations/Michael.PNG",
+                       "../illustrations/mockup detail/Michael-m1.png",
+                       "../illustrations/mockup detail/Michael-m2.png" ]
                     },
                     {
                       id: 21,
@@ -419,7 +499,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                         "25x13"
                     ],    
                       quantity: "1",
-                      description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+                      description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+                      images: [
+                        "../illustrations/Kitty.PNG",
+                         "../illustrations/mockup detail/Kitty-m1.png",
+                         "../illustrations/mockup detail/Kitty-m2.png" ]
                       },
                       {
                         id: 22,
@@ -438,7 +522,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                           "25x13"
                       ],    
                         quantity: "1",
-                        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+                        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+                        images: [
+                          "../illustrations/Mariana.PNG",
+                           "../illustrations/mockup detail/Mariana-m1.png",
+                           "../illustrations/mockup detail/Mariana-m2.png" ]
                         },
                         {
                           id: 23,
@@ -457,7 +545,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                             "25x13"
                         ],    
                           quantity: "1",
-                          description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+                          description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+                          images: [
+                            "../illustrations/Kiki.PNG",
+                             "../illustrations/mockup detail/Kiki-m1.png",
+                             "../illustrations/mockup detail/Kiki-m2.png" ]
                           },
                           {
                             id: 24,
@@ -476,7 +568,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                               "25x13"
                           ],    
                             quantity: "1",
-                            description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
+                            description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
+                            images: [
+                              "../illustrations/Japan.PNG",
+                               "../illustrations/mockup detail/Japan-m1.png",
+                               "../illustrations/mockup detail/Japan-m2.png" ]
                             },
                             
 ];

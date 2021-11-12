@@ -49,12 +49,17 @@ const gallery = document.getElementById("gallerySelect");
 const createGallery = () => {
 
         gallerySelect.innerHTML = `<img src="${product.image}">`;
-
-        gallerySelect.innerHTML = `
-          <img src="${product.images[0]}" alt="${product.images[0]}">
-          <img src="${product.images[1]}" alt="${product.images[1]}">
-          <img src="${product.images[2]}" alt="${product.images[2]}">
-          `;
+        if(product.images[1] === "empty" && product.images[2] === "empty"){
+                gallerySelect.innerHTML = `
+                <img src="${product.images[0]}" alt="${product.images[0]}">
+                `;
+        } else {
+                gallerySelect.innerHTML = `
+                <img src="${product.images[0]}" alt="${product.images[0]}">
+                <img src="${product.images[1]}" alt="${product.images[1]}">
+                <img src="${product.images[2]}" alt="${product.images[2]}">
+                `;
+        }
         //   gallerySelect.appendChild(gallery);
 
           // 🍓 selected image logic & click

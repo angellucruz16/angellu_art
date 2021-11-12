@@ -1,10 +1,17 @@
 // ✅♍️ product js
 
-// 🍓 Array of cart added products
+// 🍓 Array of cart added products--------------------------------------------
 const cart = [];
-// 🍓 Get element card from html
+
+// 🍓 Using localstorage to get cart products--------------------------------------------
+const getMyCart = () =>{
+  const cart = localStorage.getItem("cart");
+  return cart ? JSON.parse(cart) : [];
+};
+ 
+// 🍓 Get element card from html--------------------------------------------
 const productSection = document.getElementById("products");
-// 🍓 function to render cards
+// 🍓 function to render cards--------------------------------------------
 const productTemplate = (item) => {
     const product = document.createElement("a");
     product.classList.add("card");
@@ -35,7 +42,7 @@ const productTemplate = (item) => {
 </svg>
     </button>`
     }
-    // ✅♍️ Change HTML
+    // ✅♍️ Change HTML--------------------------------------------
     product.innerHTML = `
     <header class="card__header">
     <a href="./product.html?id=${item.id}">
@@ -61,7 +68,7 @@ const productTemplate = (item) => {
 
   productSection.appendChild(product);
 
-  // ✅♍️ Button Logic
+  // ✅♍️ Button Logic--------------------------------------------
   const productCart = product.querySelector(".card__cart-btn");
   productCart.addEventListener("click", e =>{
     console.log("click");
@@ -89,7 +96,7 @@ const productTemplate = (item) => {
   });
 }
 
-// ✅♍️ Filter logic here
+// ✅♍️ Filter logic here--------------------------------------------
 const filterByCategory = document.getElementById("categories");
 const loadProducts = () => {
   // 🍓 Pickup categorie selec value
@@ -123,5 +130,4 @@ products.forEach(product => {
   productTemplate(product);
 });
 // 🍓 "recorro" the products on my array products and call the function to render them
-
 

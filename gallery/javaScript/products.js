@@ -35,7 +35,11 @@ const products = [
     collectionName: "",
     inStock: true,
     isAdded: false,
-    size: "11x11",
+    size: [
+      "5x5",
+      "7x5",
+      "15x7"
+  ],
     quantity: "1",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 },
@@ -50,7 +54,11 @@ const products = [
     collectionName: "Classic",
     inStock: true,
     isAdded: false,
-    size: "14x50",
+    size: [
+      "13x16",
+      "15x15",
+      "25x13"
+  ],
     quantity: "1",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 },
@@ -65,7 +73,11 @@ const products = [
   collectionName: "",
   inStock: false,
   isAdded: false,
-  size: "14x50",
+  size: [
+    "13x16",
+    "15x15",
+    "25x13"
+],
   quantity: "1",
   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 },
@@ -80,7 +92,11 @@ const products = [
   collectionName: "Alice",
   inStock: false,
   isAdded: false,
-  size: "14x50",
+  size: [
+    "13x16",
+    "15x15",
+    "25x13"
+],
   quantity: "1",
   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 },
@@ -95,8 +111,11 @@ const products = [
   collectionName: "Alice",
   inStock: true,
   isAdded: false,
-  size: "14x50",
-  quantity: "1",
+  size: [
+    "13x16",
+    "15x15",
+    "25x13"
+],  quantity: "1",
   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 },
 {
@@ -110,8 +129,11 @@ const products = [
   collectionName: "",
   inStock: true,
   isAdded: false,
-  size: "large",
-  quantity: "1",
+  size: [
+    "small",
+    "medium",
+    "large"
+],  quantity: "1",
   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 },
 {
@@ -125,7 +147,11 @@ const products = [
   collectionName: "Classic",
   inStock: true,
   isAdded: false,
-  size: "14x50",
+  size: [
+    "13x16",
+    "15x15",
+    "25x13"
+],
   quantity: "1",
   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 },
@@ -140,7 +166,11 @@ const products = [
   collectionName: "Beauty",
   inStock: true,
   isAdded: false,
-  size: "14x50",
+  size: [
+    "13x16",
+    "15x15",
+    "25x13"
+],
   quantity: "1",
   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 },
@@ -155,7 +185,11 @@ const products = [
   collectionName: "Beauty",
   inStock: true,
   isAdded: false,
-  size: "14x50",
+  size: [
+    "13x16",
+    "15x15",
+    "25x13"
+],
   quantity: "1",
   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 },
@@ -170,7 +204,11 @@ collection: true,
 collectionName: "Beauty",
 inStock: true,
 isAdded: false,
-size: "14x50",
+size: [
+  "13x16",
+  "15x15",
+  "25x13"
+],
 quantity: "1",
 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
 },
@@ -185,7 +223,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
   collectionName: "Beauty",
   inStock: true,
   isAdded: false,
-  size: "14x50",
+  size: [
+    "13x16",
+    "15x15",
+    "25x13"
+],
   quantity: "1",
   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
   },
@@ -200,7 +242,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
     collectionName: "",
     inStock: true,
     isAdded: false,
-    size: "14x50",
+    size: [
+      "5x5",
+      "7x5",
+      "15x7"
+  ],
     quantity: "1",
     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
     },
@@ -215,7 +261,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
       collectionName: "Rhino",
       inStock: true,
       isAdded: false,
-      size: "14x50",
+      size: [
+        "5x5",
+        "7x5",
+        "15x7"
+    ],
       quantity: "1",
       description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
       },
@@ -230,7 +280,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
         collectionName: "Rhino",
         inStock: true,
         isAdded: false,
-        size: "14x50",
+        size: [
+          "5x5",
+          "7x5",
+          "15x7"
+      ],
         quantity: "1",
         description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
         },
@@ -245,7 +299,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
           collectionName: "",
           inStock: false,
           isAdded: false,
-          size: "14x50",
+          size: [
+            "13x16",
+            "15x15",
+            "25x13"
+        ], 
           quantity: "1",
           description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
           },
@@ -260,7 +318,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
             collectionName: "",
             inStock: true,
             isAdded: false,
-            size: "14x50",
+            size: [
+              "13x16",
+              "15x15",
+              "25x13"
+          ],    
             quantity: "1",
             description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
             },
@@ -275,7 +337,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
               collectionName: "",
               inStock: false,
               isAdded: false,
-              size: "14x50",
+              size: [
+                "13x16",
+                "15x15",
+                "25x13"
+            ],    
               quantity: "1",
               description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
               },
@@ -290,7 +356,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                 collectionName: "",
                 inStock: true,
                 isAdded: false,
-                size: "14x50",
+                size: [
+                  "13x16",
+                  "15x15",
+                  "25x13"
+              ],    
                 quantity: "1",
                 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
                 },
@@ -305,7 +375,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                   collectionName: "",
                   inStock: true,
                   isAdded: false,
-                  size: "14x50",
+                  size: [
+                    "13x16",
+                    "15x15",
+                    "25x13"
+                ],    
                   quantity: "1",
                   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
                   },
@@ -320,7 +394,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                     collectionName: "",
                     inStock: false,
                     isAdded: false,
-                    size: "14x50",
+                    size: [
+                      "13x16",
+                      "15x15",
+                      "25x13"
+                  ],    
                     quantity: "1",
                     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
                     },
@@ -335,7 +413,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                       collectionName: "",
                       inStock: true,
                       isAdded: false,
-                      size: "14x50",
+                      size: [
+                        "13x16",
+                        "15x15",
+                        "25x13"
+                    ],    
                       quantity: "1",
                       description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
                       },
@@ -350,7 +432,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                         collectionName: "",
                         inStock: true,
                         isAdded: false,
-                        size: "14x50",
+                        size: [
+                          "13x16",
+                          "15x15",
+                          "25x13"
+                      ],    
                         quantity: "1",
                         description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
                         },
@@ -365,7 +451,11 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                           collectionName: "",
                           inStock: true,
                           isAdded: false,
-                          size: "14x50",
+                          size: [
+                            "13x16",
+                            "15x15",
+                            "25x13"
+                        ],    
                           quantity: "1",
                           description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
                           },
@@ -380,8 +470,13 @@ description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, ma
                             collectionName: "",
                             inStock: true,
                             isAdded: false,
-                            size: "14x50",
+                            size: [
+                              "13x16",
+                              "15x15",
+                              "25x13"
+                          ],    
                             quantity: "1",
                             description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,"
                             },
+                            
 ];

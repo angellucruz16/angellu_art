@@ -1,5 +1,6 @@
 // ✅♍️ product Detail js
         // 🍓 to get the id
+
 const url = window.location.search;
 var searchParams = new URLSearchParams(url);
         // 🍓 save id in a variable
@@ -23,6 +24,7 @@ const povTemplate = (item) => {
 };
 
 povTemplate(product); 
+
 
 
 // ✅♍️ Main image logic
@@ -87,6 +89,12 @@ const createSelectSize = () => {
         <option value="${product.size[2]}">${product.size[2]}</option>
         `;
        
-
 };
+
+// ✅♍️ button Logic
+const productCart = product.querySelector(".product__add-to-cart-btn");
+productCart.addEventListener("click", e =>{
+        console.log("click");
+        e.prevent
+});
 createSelectSize();

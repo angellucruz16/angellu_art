@@ -1,0 +1,44 @@
+// ✅ cart section
+// Variables
+$dark-text: #1d3137;
+$blue-text: #0783f5;
+$yellow-text: #f2b30f;
+$orange-btn: #f2994a;
+$medium: 1.5em;
+$p-text: 0.5em;
+// imports
+@import "cart-header";
+
+// code----
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.title {
+  font-family: bely-display, sans-serif;
+}
+.title-lighter {
+  font-family: bely, sans-serif;
+}
+.paragraph {
+  font-family: muli, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+.btn-fill {
+  text-align: center;
+  font-family: "Muli", sans-serif;
+  text-decoration: none;
+  color: cornsilk;
+  font-weight: 500;
+  font-size: 0.8em;
+  min-width: 150px;
+  padding: 11px;
+  border-radius: 50px;
+  background: $orange-btn;
+}

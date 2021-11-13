@@ -1,6 +1,8 @@
 // ✅ Gallery Header
 // Variables
 $dark-text: #1d3137;
+$yellow-text: #f2b30f;
+$p-text: 0.5em;
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +12,54 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+.title-section {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__h1 {
+    color: $dark-text;
+    letter-spacing: 0.08em;
+    font-size: 3em;
+  }
+  &__subtitle {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1em;
+    color: $yellow-text;
+    padding-top: 15px;
+    margin-bottom: 100px;
+  }
+  img {
+    padding-left: 105px;
+    padding-right: 10px;
+  }
+}
 .product-view {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__template {
+    width: 60vw;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__template__info__data {
+    display: flex;
+    justify-content: space-around;
+  }
   &__template--img {
+    margin: 0px;
     width: 200px;
     height: 200px;
     object-fit: cover;
+    left: 0;
   }
 }

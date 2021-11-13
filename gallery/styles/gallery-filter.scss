@@ -17,20 +17,6 @@ $blue-text: #0783f5;
     padding-bottom: 30px;
   }
   &__select {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    text-align: center;
     width: 50%;
-    max-width: 120px;
-    border: 1px solid var(--select-border);
-    border-radius: 0.25em;
-    padding: 1em 0.5em;
-    font-size: 1.25rem;
-    cursor: pointer;
-    line-height: 3;
-    background-color: #f4f1f9;
-    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
-    box-shadow: rgba(17, 14, 202, 0.35) 0px 5px 15px;
   }
 }

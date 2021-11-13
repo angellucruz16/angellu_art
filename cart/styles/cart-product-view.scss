@@ -53,7 +53,9 @@ body {
   }
   &__template__info__data {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-left: 40px;
+    width: 80%;
   }
   &__template--img {
     margin: 0px;
@@ -62,4 +64,11 @@ body {
     object-fit: cover;
     left: 0;
   }
+}
+
+.title-tag {
+  color: $yellow-text;
+  font-size: 1em;
+  font-weight: 800 !important;
+  padding-bottom: 10px;
 }

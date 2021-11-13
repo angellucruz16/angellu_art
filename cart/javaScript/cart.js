@@ -24,18 +24,18 @@ const renderProduct =  (product) => {
     src="${product.image}"
     alt="${product.image}"
   />
-  <div class="product-view__template__info__data">
+  <div class="product-view__template__info__data paragraph">
     <div class="product-view__template__info__title">
       <p class="title-tag">${product.title}</p>
-      <p>size</p>
+      <p>13x13</p>
     </div>
     <div class="product-view__template__info__price">
-      <p class="title-tag">Price</p>
-      <p>${product.price}/p>
+      <p class="title-tag">US Price</p>
+      <p>${product.price}</p>
     </div>
     <div class="product-view__template__info__Quantity">
       <p class="title-tag">Quantity</p>
-      <select name="quantity" id="quantity">
+      <select class= "select" name="quantity" id="quantity">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -52,7 +52,7 @@ const renderProduct =  (product) => {
       <p class="title-tag">Total</p>
       <p>$60000</p>
     </div>
-    <button class="product-view__template--btn" id="button-delete">
+    <button class="button-default" id="button-delete">
       <img src="./img/s2-cart-product-view/delete-button.svg" alt="" />
     </button>
   </div>`;

@@ -85,8 +85,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 40px;
+  width: 80%;
 }
 
 .product-view__template--img {
@@ -96,5 +99,12 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   left: 0;
+}
+
+.title-tag {
+  color: #f2b30f;
+  font-size: 1em;
+  font-weight: 800 !important;
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=cart-product-view.css.map */

@@ -90,6 +90,7 @@ const createSelectSize = () => {
         `;
        
 };
+createSelectSize();
 
 // ✅♍️ button Logic
 const productCart = product.querySelector(".product__add-to-cart-btn");

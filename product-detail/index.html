@@ -65,12 +65,12 @@
       <div class="product__info-header">
         <h1 class="product__title title" id="productName"></h1>
         <div class="product__price paragraph">
-          <h3>US Price</h3>
-          <p id="productPrice"></p>
+          <h3 class="title-tag">US Price</h3>
+          <p id="productPrice" class="data"></p>
         </div>
         <div class="product__edit-info">
           <div class="product__size paragraph">
-            <h3>size</h3>
+            <h3 class="title-tag">size</h3>
             <select name="size" id="sizes">
               <!-- <option value="11x11">11x11</option>
               <option value="13x15">13x15</option>
@@ -78,7 +78,7 @@
             </select>
           </div>
           <div class="product__quantity paragraph">
-            <h3>Quantity</h3>
+            <h3 class="title-tag">Quantity</h3>
             <select name="quantity" id="quantity">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -99,7 +99,7 @@
 
       <div class="product__info-bottom paragraph">
         <h3>Description</h3>
-        <p id="productDescription">Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst, accumsan per sociosqu nibh ante porta senectus. Nam semper velit metus.</p>
+        <p id="productDescription" class="data">Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst, accumsan per sociosqu nibh ante porta senectus. Nam semper velit metus.</p>
         <h3>Specifications</h3>
         <ul>
           <li>Specifications</li>
@@ -113,6 +113,9 @@
     </section>
     <!--  ✅♍️ JS -->
     <!-- 🍓 all products array -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="./javaScript/utils.js"></script>
     <script src="../gallery/javaScript/products.js"></script>
     <script src="./javaScript/product.js"></script>
   </body>

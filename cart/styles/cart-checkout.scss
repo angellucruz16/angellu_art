@@ -1,0 +1,28 @@
+// ✅ cart CHECKOUT section
+// Variables
+$dark-text: #1d3137;
+$blue-text: #0783f5;
+$yellow-text: #f2b30f;
+$orange-btn: #f2994a;
+$medium: 1.5em;
+$p-text: 1em;
+
+.checkout {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  &__container {
+    align-content: space-around;
+    width: 40%;
+  }
+  &__popular-img {
+    display: flex;
+    align-content: space-between;
+  }
+  img {
+    width: 24%;
+  }
+}
+.add-to-checkout {
+  color: $yellow-text;
+}

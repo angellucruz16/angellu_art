@@ -67,6 +67,7 @@ h3 {
 p {
   color: #1d3137;
   margin-bottom: 20px;
+  margin: 0;
 }
 
 select {
@@ -162,10 +163,6 @@ select {
   margin-bottom: 30px;
 }
 
-.product__info-bottom p {
-  margin-bottom: 40px;
-}
-
 .product__info-bottom ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,6 +174,14 @@ select {
 .product__info-bottom li {
   margin-right: 30px;
   margin-bottom: 10px;
+}
+
+.title-tag {
+  margin-bottom: 20px;
+}
+
+.data {
+  margin-bottom: 40px;
 }
 
 .line {

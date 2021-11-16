@@ -4,7 +4,7 @@ const products = [
 {
     id: 1,
     title: "Juicy",
-    price: "50,99",
+    price: "5099",
     image: "../illustrations/Juicy.PNG",
     type: "print",
     isBestSeller: true,
@@ -27,7 +27,7 @@ const products = [
 {
     id: 2,
     title: "Gold & Blue",
-    price: "10,99",
+    price: "1099",
     image: "../illustrations/GoldBlueStickers.png",
     type: "sticker",
     isBestSeller: false,
@@ -50,7 +50,7 @@ const products = [
 {
     id: 3,
     title: "Honey",
-    price: "30,99",
+    price: "3099",
     image: "../illustrations/Honey.PNG",
     type: "print",
     isBestSeller: true,
@@ -73,7 +73,7 @@ const products = [
 {
   id: 4,
   title: "Stella",
-  price: "40,99",
+  price: "4099",
   image: "../illustrations/Stella.PNG",
   type: "print",
   isBestSeller: true,
@@ -96,7 +96,7 @@ const products = [
 {
   id: 5,
   title: "Alice Melancholia",
-  price: "60,99",
+  price: "6099",
   image: "../illustrations/AliceOne.PNG",
   type: "print",
   isBestSeller: true,
@@ -119,7 +119,7 @@ const products = [
 {
   id: 6,
   title: "Alice Serenity",
-  price: "60,99",
+  price: "6099",
   image: "../illustrations/AliceTwo.PNG",
   type: "print",
   isBestSeller: true,
@@ -141,7 +141,7 @@ const products = [
 {
   id: 7,
   title: "Classy Bag",
-  price: "60,99",
+  price: "6099",
   image: "../illustrations/BagMerch.png",
   type: "merch",
   isBestSeller: false,
@@ -163,7 +163,7 @@ const products = [
 {
   id: 8,
   title: "Golden",
-  price: "30,99",
+  price: "3099",
   image: "../illustrations/Golden.PNG",
   type: "print",
   isBestSeller: false,
@@ -186,7 +186,7 @@ const products = [
 {
   id: 9,
   title: "Lady",
-  price: "30,99",
+  price: "3099",
   image: "../illustrations/Lady_BeautyCollection.PNG",
   type: "print",
   isBestSeller: true,
@@ -209,7 +209,7 @@ const products = [
 {
   id: 10,
   title: "Jazmín",
-  price: "30,99",
+  price: "3099",
   image: "../illustrations/JazminBeautyCollection.PNG",
   type: "print",
   isBestSeller: true,
@@ -232,7 +232,7 @@ const products = [
 {
 id: 11,
 title: "Samantha",
-price: "30,99",
+price: "3099",
 image: "../illustrations/Samantha_BeautyCollection.PNG",
 type: "print",
 isBestSeller: false,
@@ -255,7 +255,7 @@ images: [
 {
   id: 12,
   title: "Rachel",
-  price: "30,99",
+  price: "3099",
   image: "../illustrations/RachelBeautyCollection.PNG",
   type: "print",
   isBestSeller: false,
@@ -278,7 +278,7 @@ images: [
   {
     id: 13,
     title: "Queen's Gambit Stickers",
-    price: "4,99",
+    price: "499",
     image: "../illustrations/GambitStickers-4.png",
     type: "sticker",
     isBestSeller: false,
@@ -301,7 +301,7 @@ images: [
     {
       id: 14,
       title: "Rhino Minimalist Stamp",
-      price: "4,99",
+      price: "499",
       image: "../illustrations/MinimalistRhinoStamp.png",
       type: "sticker",
       isBestSeller: false,
@@ -324,7 +324,7 @@ images: [
       {
         id: 15,
         title: "Rhino Minimalist Stamp",
-        price: "4,99",
+        price: "499",
         image: "../illustrations/MaximalistRhinoStamp.png",
         type: "sticker",
         isBestSeller: false,
@@ -347,7 +347,7 @@ images: [
         {
           id: 16,
           title: "Chilling",
-          price: "20,99",
+          price: "2099",
           image: "../illustrations/Chill.PNG",
           type: "print",
           isBestSeller: true,
@@ -370,7 +370,7 @@ images: [
           {
             id: 17,
             title: "Sunday",
-            price: "20,99",
+            price: "2099",
             image: "../illustrations/Sunday.PNG",
             type: "print",
             isBestSeller: true,
@@ -393,7 +393,7 @@ images: [
             {
               id: 18,
               title: "Classy",
-              price: "17,99",
+              price: "1799",
               image: "../illustrations/Classy.PNG",
               type: "print",
               isBestSeller: false,
@@ -416,7 +416,7 @@ images: [
               {
                 id: 19,
                 title: "Summer",
-                price: "20,99",
+                price: "2099",
                 image: "../illustrations/Summer.PNG",
                 type: "print",
                 isBestSeller: false,
@@ -439,7 +439,7 @@ images: [
                 {
                   id: 20,
                   title: "Pastel",
-                  price: "10,99",
+                  price: "1099",
                   image: "../illustrations/SafariPastel.PNG",
                   type: "print",
                   isBestSeller: false,
@@ -462,7 +462,7 @@ images: [
                   {
                     id: 21,
                     title: "Michael",
-                    price: "10,99",
+                    price: "1099",
                     image: "../illustrations/Michael.PNG",
                     type: "print",
                     isBestSeller: false,
@@ -485,7 +485,7 @@ images: [
                     {
                       id: 21,
                       title: "Kitty",
-                      price: "30,99",
+                      price: "3099",
                       image: "../illustrations/Kitty.PNG",
                       type: "print",
                       isBestSeller: true,
@@ -508,7 +508,7 @@ images: [
                       {
                         id: 22,
                         title: "Mariana",
-                        price: "30,99",
+                        price: "3099",
                         image: "../illustrations/Mariana.PNG",
                         type: "print",
                         isBestSeller: true,
@@ -531,7 +531,7 @@ images: [
                         {
                           id: 23,
                           title: "Kiki's Delivery Service",
-                          price: "30,99",
+                          price: "3099",
                           image: "../illustrations/Kiki.PNG",
                           type: "print",
                           isBestSeller: true,
@@ -554,7 +554,7 @@ images: [
                           {
                             id: 24,
                             title: "Japan",
-                            price: "30,99",
+                            price: "3099",
                             image: "../illustrations/Japan.PNG",
                             type: "print",
                             isBestSeller: true,

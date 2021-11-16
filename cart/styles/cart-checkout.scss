@@ -12,17 +12,50 @@ $p-text: 1em;
   display: flex;
   flex-direction: column;
   &__container {
-    align-content: space-around;
-    width: 40%;
+    margin: 4%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+    width: 80%;
   }
   &__popular-img {
-    display: flex;
-    align-content: space-between;
+    margin: 0 auto;
   }
+
   img {
     width: 24%;
+    margin-top: 40px;
+    padding-right: 10px;
+  }
+
+  &__section {
+    background-color: #f9f4f1;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 500px;
+  }
+
+  &__subtotal h3 {
+    color: $yellow-text;
+    margin-bottom: 20px;
+  }
+
+  &__action-btn {
+    background-color: #430bee;
+    border-radius: 50px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 50%;
+    margin-left: 80px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(27, 27, 201, 0.2) 0px 7px 29px 0px;
   }
 }
 .add-to-checkout {
   color: $yellow-text;
+  margin: 4%;
 }

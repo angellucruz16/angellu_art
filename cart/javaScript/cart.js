@@ -1,5 +1,8 @@
 // ✅♍️ cart js
 const cartSection = document.getElementById("cart");
+const totalSection = document.getElementById("subtotal");
+let total = 0;
+
 const getMyCart = () =>{
     const cart = localStorage.getItem("cart");
     return cart ? JSON.parse(cart) : [];
@@ -11,8 +14,11 @@ const renderMyCart = () => {
   cartSection.innerHTML = "";
   const cart = getMyCart();
   cart.forEach(product => {
+      total += product.price;
       renderProduct (product);
   });
+
+  totalSection.innerText = `$ ${total}`;
 }
 
 const renderProduct =  (product) => {
@@ -56,7 +62,7 @@ const renderProduct =  (product) => {
       <img src="./img/s2-cart-product-view/delete-button.svg" alt="" />
     </button>
   </div>`;
-  
+
 
   
     const deteleBtn = newProdct.querySelector("#button-delete");
@@ -76,4 +82,6 @@ const renderProduct =  (product) => {
 
 };
 
+
 renderMyCart();
+console.log (total);

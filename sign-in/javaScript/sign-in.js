@@ -20,17 +20,19 @@ const elementContainer = document.querySelector(".element-container");
 let user = "";
 
   // all methods from firebase are promises
-  const createUser = async (email, password, userFields) => {
+  const login = async (email, password) => {
     try {
-      const { user } = await createUserWithEmailAndPassword(auth, email, password);
-      const userId = user.uid;
-
-      await setDoc(doc(db, "users", userId), userFields);
-
+        const { user } = await signInWithEmailAndPassword(auth, email, password);
+        const userInfo = await getUserInfo(user.uid);
+        console.log(`Bienvenido ${userInfo.name}`);
+        
+        console.log(userInfo);
     } catch (e) {
-      console.log(e);
+        if (e.code === "auth/user-not-found") {
+            console.log("Este usuario no existe en nuestra base de datos");
+        }
     }
-  }
+}
 
 // function newElement (name)  {
 const newElement = (name) => {

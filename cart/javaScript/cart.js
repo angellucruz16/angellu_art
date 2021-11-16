@@ -15,10 +15,9 @@ const renderMyCart = () => {
   const cart = getMyCart();
   cart.forEach(product => {
       total += product.price;
-      renderProduct (product);
+      renderProduct(product);
   });
-
-  totalSection.innerText = `$ ${total}`;
+  totalSection.innerText = `$ ${formatCurrency(total)}`;
 }
 
 const renderProduct =  (product) => {
@@ -79,8 +78,8 @@ const renderProduct =  (product) => {
     });
 
     cartSection.appendChild(newProdct);
-
 };
+// 🥓 No funciona me sale NaN
 
 
 renderMyCart();

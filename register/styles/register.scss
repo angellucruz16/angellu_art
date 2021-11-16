@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.title {
+  font-family: bely;
+  font-size: 4em;
+  color: #35312b;
+}
+.subtitle {
+  font-family: Muli;
+  font-size: 1.5em;
+  color: #b1aaa1;
+  margin-top: 20px;
+}
+.text {
+  font-family: Muli;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #0b36f5;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.input-title {
+  font-family: bely;
+  font-weight: 700;
+  font-size: 1.3em;
+  color: orange;
+}
+.img-container {
+  background-color: #fff8ef;
+  height: 1300px;
+  &__main {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 55vw;
+    height: 1300px;
+    width: 40vw;
+    object-fit: cover;
+  }
+}
+
+.form-container {
+  margin: 14vw;
+  display: flex;
+  flex-direction: column;
+  &__form label {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__form label input {
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(243, 242, 239);
+  }
+  &__form div {
+    display: flex;
+    flex-direction: row;
+  }
+  .name {
+    margin-right: 90px;
+    width: 250px;
+  }
+  .last-name {
+    width: 250px;
+  }
+  .addres {
+    margin-bottom: 40px;
+  }
+}
+button {
+  font-family: Muli;
+  font-weight: 800;
+  background-color: #3d09fa; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 0.8em;
+}

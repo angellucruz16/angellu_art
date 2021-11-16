@@ -1,6 +1,8 @@
 // ✅♍️ product js
  
 // 🍓 Using localstorage to get cart products--------------------------------------------
+
+
 const getMyCart = () =>{
   const cart = localStorage.getItem("cart");
   return cart ? JSON.parse(cart) : [];

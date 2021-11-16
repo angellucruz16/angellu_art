@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- ⭕ fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/uei7ice.css" />
+    <!-- ☔ style -->
+    <link rel="stylesheet" href="./styles/register.css" />
+  </head>
+
+  <body>
+    <figure class="img-container">
+      <img
+        class="img-container__main"
+        src="../illustrations/Lady_BeautyCollection.png"
+        alt="principal img"
+      />
+    </figure>
+
+    <!-- ✨form section -->
+    <aside class="form-container">
+      <div>
+        <h2 class="subtitle">Sign Up</h2>
+        <h1 class="title">Want to be part of our family?</h1>
+        <p class="text">🍣 Stay up-to-date with all my latest art 🍙</p>
+      </div>
+      <form class="form form-container__form input-title">
+        <div>
+          <label class="name" for="name">
+            <samp>Name</samp>
+            <input type="text" name="userName" />
+          </label>
+          <label class="city" for="city">
+            <samp>City</samp>
+            <input type="text" name="city" />
+          </label>
+        </div>
+        <label for="email">
+          <samp>email contact</samp>
+          <input type="email" name="email" />
+        </label>
+        <label for="password">
+          <samp>Password</samp>
+          <input type="password" name="password" />
+        </label>
+        <label class="addres" for="addres">
+          <samp>Addres</samp>
+          <input type="text" name="addres" />
+        </label>
+        <button name="submit" id="register">SIGN UP</button>
+      </form>
+
+      <div class="element-container"></div>
+    </aside>
+
+    <!-- ☔ javaScript -->
+    <script src="./javaScript/register.js"></script>
+    <script type="module" src="../utils.js"></script>
+    <script src="./javaScript/products.js"></script>
+    <script src="./javaScript/app.js"></script>
+  </body>
+</html>

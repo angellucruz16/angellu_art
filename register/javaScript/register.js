@@ -72,9 +72,7 @@ form.addEventListener("submit", (event) => {
                 isAdmin: false,
             });
             newElement(userObj.name);
-          } else {
-            alert("unfilled fields")
-          }
+          } 
 
 
     } else {

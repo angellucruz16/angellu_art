@@ -127,6 +127,7 @@ filterByCategory.addEventListener("change", e =>{
   loadProducts();
 });
 
+
 products.forEach(product => {
   productTemplate(product);
 });

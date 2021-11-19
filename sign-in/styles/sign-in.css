@@ -91,7 +91,7 @@ body {
   margin-bottom: 50px;
 }
 
-button {
+#login {
   font-family: Muli;
   font-weight: 800;
   background-color: #3d09fa;
@@ -104,5 +104,38 @@ button {
   display: inline-block;
   border-radius: 50px;
   font-size: 0.8em;
+}
+
+.google-text {
+  font-size: 0.8em;
+}
+
+.google {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: white;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  -webkit-box-shadow: rgba(27, 31, 255, 0.527) 0px 4px 12px;
+          box-shadow: rgba(27, 31, 255, 0.527) 0px 4px 12px;
+  border-radius: 50px;
+}
+
+.google img {
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
 }
 /*# sourceMappingURL=sign-in.css.map */

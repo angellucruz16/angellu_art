@@ -91,3 +91,10 @@ button {
   border-radius: 50px;
   font-size: 0.8em;
 }
+
+#logout {
+  display: none;
+  &.visible {
+    display: block;
+  }
+}

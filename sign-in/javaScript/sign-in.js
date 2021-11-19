@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
-import {  getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
-import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
+import {  getAuth, signInWithEmailAndPassword,signInWithPopup, GoogleAuthProvider  } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
+import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js"; 
 
 const firebaseConfig = {
     apiKey: "AIzaSyA2tct77jPrdJUvyyHhIstyIHrSxLdCoqI",
@@ -14,6 +14,7 @@ const firebaseConfig = {
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
     const auth = getAuth();
+    const googleButton = document.getElementById("google");
   
 const form = document.querySelector(".form");
 const elementContainer = document.querySelector(".element-container");
@@ -24,7 +25,6 @@ const elementContainer = document.querySelector(".element-container");
         const elem = document.createElement("div");
         elem.classList.add("notification");
         elem.innerHTML = `<h1 class="notification">${message}</h1>`;
-        //  elem.innerText = "Pronto nos pondremos en contacto contigo, " + name + " gracias!";
         elementContainer.appendChild(elem);
     };
 
@@ -37,9 +37,18 @@ const elementContainer = document.querySelector(".element-container");
         console.log(e);
     }
   };
+  const loginWithGoogle = async () => {
+    const provider = new GoogleAuthProvider();
+    const result = await signInWithPopup(auth, provider);
+    const user = result.user;
+
+    const userInfo = await getUserInfo(user.uid);
+
+    console.log(`Bienvenido ${userInfo.name}`);
+};
 
   // all methods from firebase are promises
-  const login = async (email, password) => {
+  const login = async(email, password) => {
     try {
         const { user } = await signInWithEmailAndPassword(auth, email, password);
         console.log(user);
@@ -64,6 +73,10 @@ const elementContainer = document.querySelector(".element-container");
     }
 }
 
+
+googleButton.addEventListener("click", e =>{
+    loginWithGoogle();
+}); 
 
 // form.addEventListener("submit",function(event){
 form.addEventListener("submit", (event) => {

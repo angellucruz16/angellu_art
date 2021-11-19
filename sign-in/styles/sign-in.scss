@@ -67,7 +67,7 @@ body {
     margin-bottom: 50px;
   }
 }
-button {
+#login {
   font-family: Muli;
   font-weight: 800;
   background-color: #3d09fa; /* Green */
@@ -79,4 +79,27 @@ button {
   display: inline-block;
   border-radius: 50px;
   font-size: 0.8em;
+}
+
+.google-text {
+  font-size: 0.8em;
+}
+.google {
+  & img {
+    width: 20px;
+    display: flex;
+    margin: 20px;
+  }
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  box-shadow: rgba(27, 31, 255, 0.527) 0px 4px 12px;
+  border-radius: 50px;
 }

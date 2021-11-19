@@ -1,6 +1,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
-import {  getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
+import {  getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signOut} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
 import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
+
+const logoutButton = document.getElementById("logout");
 
 const firebaseConfig = {
     apiKey: "AIzaSyA2tct77jPrdJUvyyHhIstyIHrSxLdCoqI",
@@ -17,7 +19,6 @@ const firebaseConfig = {
   
 const form = document.querySelector(".form");
 const elementContainer = document.querySelector(".element-container");
-let user = "";
 
   // all methods from firebase are promises
   const createUser = async (email, password, userFields) => {
@@ -26,11 +27,23 @@ let user = "";
       const userId = user.uid;
 
       await setDoc(doc(db, "users", userId), userFields);
-
     } catch (e) {
-      console.log(e);
+      if (e.code === "auth/email-already-in-use") {
+        console.log("Correo electrónico en uso...")
+      }
+      if (e.code === "auth/weak-password") {
+          console.log("Intenta con una contraseña más segura...")
+      }
     }
   }
+
+const logout = async () => {
+ try{
+    await signOut(auth);
+ } catch (e) {
+    console.log(e);
+ }
+}
 
 // function newElement (name)  {
 const newElement = (name) => {
@@ -74,9 +87,19 @@ form.addEventListener("submit", (event) => {
             newElement(userObj.name);
           } 
 
-
     } else {
         alert("Unfilled fields please complete");
     }
+});
+
+logoutButton.addEventListener("click", e => {
+  logout();
+});
+
+onAuthStateChanged(auth, user => {
+  if (user) {
+      form.classList.add("hidden");
+      logoutButton.add("visible");
+  }
 });
 

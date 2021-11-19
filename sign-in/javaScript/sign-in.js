@@ -19,16 +19,7 @@ const firebaseConfig = {
 const form = document.querySelector(".form");
 const elementContainer = document.querySelector(".element-container");
 
-// function newElement (name)  {
-    const newElement = (message) => {
-        elementContainer.innerHTML = "";
-        const elem = document.createElement("div");
-        elem.classList.add("notification");
-        elem.innerHTML = `<h1 class="notification">${message}</h1>`;
-        elementContainer.appendChild(elem);
-    };
-
-  const getUserInfo = async (userId) => {
+const getUserInfo = async (userId) => {
     try {
         const docRef = doc(db, "users", userId);
         const docSnap = await getDoc(docRef);
@@ -37,21 +28,31 @@ const elementContainer = document.querySelector(".element-container");
         console.log(e);
     }
   };
-  const loginWithGoogle = async () => {
-    const provider = new GoogleAuthProvider();
-    const result = await signInWithPopup(auth, provider);
-    const user = result.user;
 
-    const userInfo = await getUserInfo(user.uid);
+    const newElement = (message) => {
+        elementContainer.innerHTML = "";
+        const elem = document.createElement("div");
+        elem.classList.add("notification");
+        elem.innerHTML = `<h1 class="notification">${message}</h1>`;
+        elementContainer.appendChild(elem);
+    };
 
-    console.log(`Bienvenido ${userInfo.name}`);
-};
+    const loginWithGoogle = async () => {
+        const provider = new GoogleAuthProvider();
+        const result = await signInWithPopup(auth, provider);
+        const user = result.user;
+    
+        const userInfo = await getUserInfo(user.uid);
+    
+        console.log(`Bienvenido ${userInfo.name}`);
+    };
+    
 
+ 
   // all methods from firebase are promises
   const login = async(email, password) => {
     try {
         const { user } = await signInWithEmailAndPassword(auth, email, password);
-        console.log(user);
         const userInfo = await getUserInfo(user.uid);
 
         if (userInfo.isAdmin) {

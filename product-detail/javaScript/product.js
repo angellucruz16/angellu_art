@@ -1,13 +1,28 @@
 // ✅♍️ product Detail js
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
         // 🍓 to get the id
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const productSection = document.getElementById("product");
+        const spinner = document.getElementById("spinner");
 
-const url = window.location.search;
-var searchParams = new URLSearchParams(url);
-        // 🍓 save id in a variable
-const productId = searchParams.get("id");
-
-const product = products.find(product => product.id == productId);
-console.log(product);
+        
+        const getProduct = async () => {
+                const url = window.location.search;
+                const searchParams = new URLSearchParams(url);
+                const productId = searchParams.get("id");
+            
+                const docRef = doc(db, "products", productId);
+                const docSnap = await getDoc(docRef);
+                const data = docSnap.data();
+            
+                productSection.classList.add("loaded");
+                spinner.classList.add("loaded");
+            
+                loadProductInfo(data);
+            
+            }
 
 // ✅♍️ Pov Guide
 const povSection = document.querySelector(".pov");
@@ -99,3 +114,4 @@ productCart.addEventListener("click", e =>{
         e.prevent
 });
 createSelectSize();
+getProduct();

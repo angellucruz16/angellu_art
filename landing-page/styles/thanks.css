@@ -1,6 +1,7 @@
 .thanks {
-  margin: 0auto;
-  padding-top: 30px;
+  padding-top: 60px;
+  margin: auto;
+  padding-top: 10%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,7 +13,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.thanks__container {
+  width: 50vw;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+}
+
+.thanks__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .thanks__container--text {
@@ -23,29 +39,61 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 40px;
 }
 
 .thanks__title img {
+  margin: auto;
   height: 40px;
   width: 40px;
 }
 
 .thanks__container--text h2 {
-  margin-top: 30px;
-  margin-left: 30px;
+  text-align: center;
   color: #1d3137;
-  margin-right: 30px;
 }
 
 .thanks__container--text p {
   margin-top: 20px;
   color: #0783f5;
+}
+
+@media all and (max-width: 700px) {
+  .thanks {
+    padding-top: 60px;
+    margin: auto;
+    padding-top: 10%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .thanks__container {
+    width: 100vw;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+  }
+  .thanks body {
+    background-color: #0783f5;
+  }
+  .thanks .thanks__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+  }
 }
 /*# sourceMappingURL=thanks.css.map */

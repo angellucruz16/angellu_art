@@ -7,12 +7,13 @@ $blue-text: #0783f5;
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
   &__div {
     padding-top: 20px;
     margin: 0 auto;
   }
   &__container {
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
 

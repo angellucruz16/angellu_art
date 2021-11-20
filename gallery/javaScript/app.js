@@ -4,7 +4,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
 import { getFirestore, collection, getDocs, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
 // 🍓 Using localstorage to get cart products--------------------------------------------
-
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const db = getFirestore(app);
@@ -111,7 +110,7 @@ const productTemplate = (item) => {
   </header>
   <section class="card__details">
     <h1 class="title">${item.title}</h1>
-    <span class="paragraph">${item.price}</span>
+    <span class="paragraph">${formatCurrency(item.price)}</span>
   </section>`;
 
   productSection.appendChild(product);

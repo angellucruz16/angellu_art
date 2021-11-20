@@ -14,10 +14,10 @@ const renderMyCart = () => {
   cartSection.innerHTML = "";
   const cart = getMyCart();
   cart.forEach(product => {
-      total += product.price;
+      total += parseInt(product.price);
       renderProduct(product);
   });
-  totalSection.innerText = `$ ${formatCurrency(total)}`;
+  totalSection.innerText = `${formatCurrency(total)}`;
 }
 
 const renderProduct =  (product) => {
@@ -36,7 +36,7 @@ const renderProduct =  (product) => {
     </div>
     <div class="product-view__template__info__price">
       <p class="title-tag">US Price</p>
-      <p>${product.price}</p>
+      <p>${formatCurrency(product.price)}</p>
     </div>
     <div class="product-view__template__info__Quantity">
       <p class="title-tag">Quantity</p>
@@ -55,15 +55,13 @@ const renderProduct =  (product) => {
     </div>
     <div class="product-view__template__total">
       <p class="title-tag">Total</p>
-      <p>$60000</p>
+      <p>${formatCurrency(product.price)}</p>
     </div>
     <button class="button-default" id="button-delete">
       <img src="./img/s2-cart-product-view/delete-button.svg" alt="" />
     </button>
   </div>`;
 
-
-  
     const deteleBtn = newProdct.querySelector("#button-delete");
     deteleBtn.addEventListener ("click", (e) => {
       const productsCopy = getMyCart();

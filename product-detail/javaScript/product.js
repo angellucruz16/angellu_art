@@ -1,28 +1,66 @@
 // ✅♍️ product Detail js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
-        // 🍓 to get the id
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
-        const productSection = document.getElementById("product");
-        const spinner = document.getElementById("spinner");
 
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const productSection = document.getElementById("product");
+const spinner = document.getElementById("spinner");
+
+
+const getProduct = async () => {
+    const url = window.location.search;
+    const searchParams = new URLSearchParams(url);
+    const productId = searchParams.get("id");
         
-        const getProduct = async () => {
-                const url = window.location.search;
-                const searchParams = new URLSearchParams(url);
-                const productId = searchParams.get("id");
-            
-                const docRef = doc(db, "products", productId);
-                const docSnap = await getDoc(docRef);
-                const data = docSnap.data();
-            
-                productSection.classList.add("loaded");
-                spinner.classList.add("loaded");
-            
-                loadProductInfo(data);
-            
-            }
+    const docRef = doc(db, "products", productId);
+    const docSnap = await getDoc(docRef);
+    const data = docSnap.data();
+        
+    productSection.classList.add("loaded");
+    spinner.classList.add("loaded");
+        
+    loadProductInfo(data);
+}
+
+const createSelectSize = (product) => {
+
+    sizes.innerHTML = `
+    <option value="${product.size[0]}">${product.size[0]}</option>
+    <option value="${product.size[1]}">${product.size[1]}</option>
+    <option value="${product.size[2]}">${product.size[2]}</option>
+    `;
+   
+};
+
+const createGallery = (product) => {
+
+    gallerySelect.innerHTML = `<img src="${product.image}">`;
+    if(product.images[1] === "empty" && product.images[2] === "empty"){
+            gallerySelect.innerHTML = `
+            <img src="${product.images[0]}" alt="${product.images[0]}">
+            `;
+    } else {
+            gallerySelect.innerHTML = `
+            <img src="${product.images[0]}" alt="${product.images[0]}">
+            <img src="${product.images[1]}" alt="${product.images[1]}">
+            <img src="${product.images[2]}" alt="${product.images[2]}">
+            `;
+    }
+    //   gallerySelect.appendChild(gallery);
+
+      // 🍓 selected image logic & click
+      const productGalleryImages = document.querySelector(".product__images-preview > .product__select-img-container");
+    
+      productGalleryImages.addEventListener("click", e => {
+            if (e.target.tagName === "IMG"){
+                    const imageSource = e.target.currentSrc;
+                    productImage.setAttribute("src", imageSource);
+            };
+      });
+};
+
+
 
 // ✅♍️ Pov Guide
 const povSection = document.querySelector(".pov");
@@ -38,74 +76,50 @@ const povTemplate = (item) => {
   povSection.appendChild(pov);
 };
 
-povTemplate(product); 
+
+
+const loadProductInfo = (product) => {
+
+    // ✅♍️ Main image logic
+    const productImage = document.getElementById("productImage");
+    productImage.setAttribute("src", product.image);
+
+
+    // ✅♍️ Title logic
+    const productName = document.getElementById("productName");
+    productName.innerText = product.title;
+
+    // ✅♍️ Product Description
+    const productPrice = document.getElementById("productPrice");
+    productPrice.innerText = `${formatCurrency(product.price)}`;
+
+    // ✅♍️ Product Description
+    const productDescription = document.getElementById("productDescription");
+    productDescription.innerText = product.description;
+
+    if (product.images){
+        createGallery(product);
+    };
+
+    createSelectSize(product);
+
+    povTemplate(product); 
+
+
+}
 
 
 
-// ✅♍️ Main image logic
-const productImage = document.getElementById("productImage");
-productImage.setAttribute("src", product.image);
-
-
-// ✅♍️ Title logic
-const productName = document.getElementById("productName");
-productName.innerText = product.title;
-
-// ✅♍️ Product Description
-const productPrice = document.getElementById("productPrice");
-productPrice.innerText = `$ ${product.price}`;
-
-// ✅♍️ Product Description
-const productDescription = document.getElementById("productDescription");
-productDescription.innerText = product.description;
-
-console.log(product.images);
+// console.log(product.images);
 
 // ✅♍️ Images select Logic
+
 const gallery = document.getElementById("gallerySelect");
-const createGallery = () => {
 
-        gallerySelect.innerHTML = `<img src="${product.image}">`;
-        if(product.images[1] === "empty" && product.images[2] === "empty"){
-                gallerySelect.innerHTML = `
-                <img src="${product.images[0]}" alt="${product.images[0]}">
-                `;
-        } else {
-                gallerySelect.innerHTML = `
-                <img src="${product.images[0]}" alt="${product.images[0]}">
-                <img src="${product.images[1]}" alt="${product.images[1]}">
-                <img src="${product.images[2]}" alt="${product.images[2]}">
-                `;
-        }
-        //   gallerySelect.appendChild(gallery);
-
-          // 🍓 selected image logic & click
-          const productGalleryImages = document.querySelector(".product__images-preview > .product__select-img-container");
-        
-          productGalleryImages.addEventListener("click", e => {
-                if (e.target.tagName === "IMG"){
-                        const imageSource = e.target.currentSrc;
-                        productImage.setAttribute("src", imageSource);
-                };
-          });
-        };
-
-        if (product.images){
-                createGallery();
-        };
 
 // ✅♍️ Size Select Logic
 const sizes = document.getElementById("sizes");
-const createSelectSize = () => {
 
-        sizes.innerHTML = `
-        <option value="${product.size[0]}">${product.size[0]}</option>
-        <option value="${product.size[1]}">${product.size[1]}</option>
-        <option value="${product.size[2]}">${product.size[2]}</option>
-        `;
-       
-};
-createSelectSize();
 
 // ✅♍️ button Logic
 const productCart = product.querySelector(".product__add-to-cart-btn");
@@ -113,5 +127,7 @@ productCart.addEventListener("click", e =>{
         console.log("click");
         e.prevent
 });
-createSelectSize();
+
+
+//createSelectSize();
 getProduct();

@@ -2,11 +2,11 @@
 // 📌 variables no funcionan desde el main
 $dark-text: #1d3137;
 $blue-text: #0783f5;
+
 .category {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  position: relative;
   margin-bottom: 90px;
   &__div {
     padding-top: 20px;
@@ -27,26 +27,44 @@ $blue-text: #0783f5;
       width: 70%;
       border-radius: 50%;
     }
-    .artice h3 {
-      font-size: 2vw;
-      font-weight: 300;
-      // 📌ya no me cambia
+  }
+  &__titles {
+    font-size: 2em;
+    letter-spacing: 0.5px !important;
+    font-weight: 700;
+    // 📌ya no me cambia
+  }
+}
+
+@media all and (max-width: 700px) {
+  .category {
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 41px;
+    &__div {
+      padding-top: 20px;
+      margin: 0 auto;
     }
-  }
-  &__decor {
-    position: absolute;
-    width: 100px;
-  }
-  &__wave {
-    width: 100px;
-    z-index: -1;
-    top: 20px;
-    right: 20px;
-  }
-  &__square {
-    width: 80px;
-    z-index: -1;
-    bottom: 50px;
-    left: 10px;
+    &__container {
+      margin-top: 0px;
+      display: flex;
+      color: #1d3137;
+      color: $dark-text;
+      // 📌articles no se centran del todo
+      .article {
+        text-align: center;
+      }
+      .article img {
+        width: 70%;
+        border-radius: 50%;
+      }
+    }
+    &__titles {
+      font-size: 1em;
+      letter-spacing: 0.5px !important;
+    }
   }
 }

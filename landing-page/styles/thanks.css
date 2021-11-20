@@ -61,6 +61,37 @@
   color: #0783f5;
 }
 
+.follor-me {
+  margin-top: 20px;
+  color: #0783f5;
+  font-weight: 700 !important;
+  margin-bottom: 40px;
+}
+
+.follow {
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.follow img {
+  width: 190px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100px;
+  padding: 5px;
+}
+
 @media all and (max-width: 700px) {
   .thanks {
     padding-top: 60px;

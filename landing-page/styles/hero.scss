@@ -2,8 +2,16 @@
 .hero {
   position: relative;
   width: 100vw;
+  display: flex;
+
   &__img {
-    width: 100%;
+    display: none;
+  }
+  &__img2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95vw;
   }
   &__container {
     display: flex;
@@ -29,6 +37,21 @@
         font-size: 3vmin;
         font-weight: 300;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero {
+    position: relative;
+    width: 100vw;
+
+    &__img {
+      display: block;
+      width: 100%;
+    }
+    &__img2 {
+      display: none;
     }
   }
 }

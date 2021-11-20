@@ -4,12 +4,15 @@ $dark-text: #1d3137;
 $blue-text: #0783f5;
 
 .category {
-  width: 100vw;
+  display: block;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   margin-bottom: 90px;
+  align-content: center;
   &__div {
-    padding-top: 20px;
     margin: 0 auto;
   }
   &__container {

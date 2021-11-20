@@ -1,5 +1,5 @@
 .category {
-  width: 100vw;
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,11 +7,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   margin-bottom: 90px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .category__div {
-  padding-top: 20px;
   margin: 0 auto;
 }
 

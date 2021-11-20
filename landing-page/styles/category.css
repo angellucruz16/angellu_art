@@ -48,16 +48,16 @@
 }
 
 .category__wave {
-  width: 180px;
+  width: 100px;
   z-index: -1;
   top: 20px;
-  right: 0px;
+  right: 20px;
 }
 
 .category__square {
-  width: 180px;
+  width: 80px;
   z-index: -1;
   bottom: 50px;
-  left: -60px;
+  left: 10px;
 }
 /*# sourceMappingURL=category.css.map */

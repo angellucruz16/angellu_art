@@ -135,62 +135,51 @@
     </section>
 
     <!-- ✅ S4 Slider -->
-    <section class="slider">
-      <div class="slider__title">
-        <h2 class="title">most recently added</h2>
-        <p class="paragraph">
-          Recieve a free print and shipping <br />
-          for orders over $20k US
-        </p>
-      </div>
-
-      <div class="slider__container">
-        <!-- button here -->
-        <div class="slider__interaction">
-          <!-- arrow, images and dots -->
+    <div class="slider__title">
+      <h2 class="title">most recently added</h2>
+      <p class="paragraph">
+        Recieve a free print and shipping <br />
+        for orders over $20k US
+      </p>
+    </div>
+    <div class="container-slider">
+      <div class="slider" id="slider">
+        <div class="slider__section">
           <img
-            class="slider__arrow"
-            id="before"
-            src="./img/s4-slider/s4-arrow-left.svg"
-            alt="left arrow"
+            src="../illustrations/Lady_BeautyCollection.png"
+            alt=""
+            class="slider__img"
           />
-          <div class="slider__mask">
-            <!-- only images -->
-            <div class="slider__img--container">
-              <img
-                class="slider__img--show"
-                id="img-1"
-                src="./img/s4-slider/s4 img1.png"
-                alt="last recently added"
-              />
-              <img
-                class="slider__img"
-                id="img-2"
-                src="./img/s4-slider/s4 img2.png"
-                alt="second last recently added"
-              />
-              <img
-                class="slider__img"
-                id="img-3"
-                src="./img/s4-slider/s4 img3.png"
-                alt="third last recently added"
-              />
-            </div>
-          </div>
-          <!-- <div class="slider__dot-container">
-            <div class="slider__dot"></div>
-            <div class="slider__dot"></div>
-            <div class="slider__dot"></div>
-          </div> -->
+        </div>
+        <div class="slider__section">
           <img
-            class="slider__arrow"
-            id="after"
-            src="./img/s4-slider/s4-arrow-right.svg"
-            alt="right arrow"
+            src="../illustrations/RachelBeautyCollection.png"
+            alt=""
+            class="slider__img"
+          />
+        </div>
+        <div class="slider__section">
+          <img
+            src="../illustrations/Samantha_BeautyCollection.png"
+            alt=""
+            class="slider__img"
+          />
+        </div>
+        <div class="slider__section">
+          <img
+            src="../illustrations/JazminBeautyCollection.png"
+            alt=""
+            class="slider__img"
           />
         </div>
       </div>
-    </section>
+      <div class="slider__btn slider__btn--right">
+        <img src="./img/s4-slider/arrow_right.svg" alt="" id="button-right" />
+      </div>
+      <div class="slider__btn slider__btn--left">
+        <img src="./img/s4-slider/arrow_left.svg" alt="" id="button-left" />
+      </div>
+    </div>
 
     <!-- ✅ Thanks -->
     <section class="thanks">
@@ -214,9 +203,7 @@
       </div>
     </section>
     <!-- ✅ java Sript -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
-    <script type="module" src="../utils.js"></script>
-    <script src="./javaScript/s4-slider/slider.js"></script>
+    <script src="../utils.js"></script>
+    <script src="./javaScript/slider.js"></script>
   </body>
 </html>

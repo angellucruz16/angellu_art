@@ -3,13 +3,26 @@
 $dark-text: #1d3137;
 $blue-text: #0783f5;
 
-.slider {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
+.container-slider {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: rgba(27, 27, 201, 0.349) 0px 7px 29px 0px;
   position: relative;
-  margin-top: 60px;
+  border-radius: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.slider {
+  display: flex;
+  height: 400px;
+  width: 400%;
+  margin-left: -100%;
+
   &__title {
+    margin-top: 60px;
     text-align: center;
     margin-bottom: 40px;
   }
@@ -22,37 +35,35 @@ $blue-text: #0783f5;
     color: $blue-text;
   }
 
-  &__container {
-    display: block;
-    min-height: 50vh;
-    max-width: 300px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  &__interaction {
-    display: grid;
-    grid-template-columns: 20px 1fr 20px;
-    align-items: center;
-    gap: 1em;
+  &__section {
+    width: 100%;
   }
   &__img {
-    align-items: center;
-    margin: 0 auto;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    opacity: 0;
-    pointer-events: none;
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    align-items: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
   }
-  &__img--show {
-    opacity: 1;
-    pointer-events: unset;
+  &__btn {
+    position: absolute;
+    width: 40px;
+    align-items: center;
+    align-content: center;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.438);
+    top: 50%;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
   }
-  &__dot {
-    // 📌 no se muestran
-    background-color: rgb(190, 190, 190);
-    border-radius: 50%;
+  &__btn:hover {
+    background-color: #f8c210;
+  }
+  &__btn--right {
+    right: 10px;
+  }
+  &__btn--left {
+    left: 10px;
   }
 }

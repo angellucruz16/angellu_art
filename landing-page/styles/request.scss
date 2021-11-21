@@ -42,7 +42,7 @@ $blue-text: #0783f5;
       height: 20px;
     }
     & p {
-      font-size: 1.4em !important;
+      font-size: 1.2em !important;
       padding: 20px;
       align-items: center;
       margin: 0 auto;
@@ -56,7 +56,7 @@ $blue-text: #0783f5;
   &__container-decor {
     position: relative;
     .request__main-img {
-      width: 80vmin;
+      width: 54vmin;
       display: block;
       margin: 0 auto;
     }
@@ -69,14 +69,14 @@ $blue-text: #0783f5;
     // 📌 cambiar de posición
     z-index: -1;
     bottom: 70px;
-    right: 25px;
+    right: 204px;
   }
 
   &__star {
     // 📌 cambiar de posición
     // z-index: -1;
     top: 240px;
-    left: 90px;
+    left: 248px;
   }
 }
 .button-request {
@@ -109,7 +109,7 @@ $blue-text: #0783f5;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 30px;
+      padding: 10px;
       // margin-bottom: 7em;
       .request__title {
         display: flex;
@@ -154,9 +154,22 @@ $blue-text: #0783f5;
       position: absolute;
       width: 80px;
     }
+    &__hole {
+      // 📌 cambiar de posición
+      z-index: -1;
+      bottom: 70px;
+      right: 45px;
+    }
 
+    &__star {
+      // 📌 cambiar de posición
+      // z-index: -1;
+      top: 240px;
+      left: 60px;
+    }
     .button-request {
-      margin-top: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       font-size: 0.6em !important;
       display: block;
       align-items: center;

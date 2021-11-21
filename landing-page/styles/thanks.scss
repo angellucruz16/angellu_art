@@ -69,7 +69,17 @@ $blue-text: #0783f5;
     height: 250px;
     object-fit: cover;
     border-radius: 100px;
-    padding: 5px;
+    margin: 50px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  p {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5em;
   }
 }
 
@@ -106,15 +116,17 @@ $blue-text: #0783f5;
     align-content: center;
 
     img {
-      width: 300px;
+      width: 240px;
       height: 100px;
       object-fit: cover;
       border-radius: 100px;
-      padding: 5px;
       cursor: pointer;
+      margin: 10px;
     }
     p {
       text-align: center;
+      font-weight: 800;
+      font-size: 1em;
     }
   }
 }

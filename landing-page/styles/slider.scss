@@ -4,8 +4,7 @@ $dark-text: #1d3137;
 $blue-text: #0783f5;
 
 .container-slider {
-  width: 90%;
-  max-width: 900px;
+  width: 70%;
   margin: auto;
   overflow: hidden;
   box-shadow: rgba(27, 27, 201, 0.349) 0px 7px 29px 0px;
@@ -29,10 +28,12 @@ $blue-text: #0783f5;
   &__title h2 {
     margin-bottom: 25px;
     size: 2em;
+    font-size: 1.8em;
     color: $dark-text;
   }
   &__title p {
     color: $blue-text;
+    font-size: 1.2em;
   }
 
   &__section {
@@ -65,5 +66,17 @@ $blue-text: #0783f5;
   }
   &__btn--left {
     left: 10px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .slider__title h2 {
+    margin-bottom: 25px;
+    font-size: 1em;
+    color: $dark-text;
+  }
+  .slider___title p {
+    color: $blue-text;
+    font-size: 0.9em;
   }
 }

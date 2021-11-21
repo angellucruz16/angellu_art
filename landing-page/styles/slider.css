@@ -1,6 +1,5 @@
 .container-slider {
-  width: 90%;
-  max-width: 900px;
+  width: 70%;
   margin: auto;
   overflow: hidden;
   -webkit-box-shadow: rgba(27, 27, 201, 0.349) 0px 7px 29px 0px;
@@ -29,11 +28,13 @@
 .slider__title h2 {
   margin-bottom: 25px;
   size: 2em;
+  font-size: 1.8em;
   color: #1d3137;
 }
 
 .slider__title p {
   color: #0783f5;
+  font-size: 1.2em;
 }
 
 .slider__section {
@@ -79,5 +80,17 @@
 
 .slider__btn--left {
   left: 10px;
+}
+
+@media all and (max-width: 700px) {
+  .slider__title h2 {
+    margin-bottom: 25px;
+    font-size: 1em;
+    color: #1d3137;
+  }
+  .slider___title p {
+    color: #0783f5;
+    font-size: 0.9em;
+  }
 }
 /*# sourceMappingURL=slider.css.map */

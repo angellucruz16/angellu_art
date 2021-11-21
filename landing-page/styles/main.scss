@@ -13,13 +13,14 @@ $p-text: 0.5em;
 @import "request";
 @import "slider";
 @import "thanks";
-@import "footer"; // code
+@import "footer";
 // code
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 body {
   max-width: 1420px;

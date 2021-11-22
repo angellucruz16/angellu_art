@@ -11,7 +11,7 @@ const db = getFirestore(app);
 //     id: 1,
 //     title: "Juicy",
 //     price: "5099",
-//     image: "../illustrations/Juicy.PNG",
+//     image: "../illustrations/Juicy.png",
 //     type: "print",
 //     isBestSeller: true,
 //     collection: true,
@@ -26,7 +26,7 @@ const db = getFirestore(app);
 //     quantity: "1",
 //     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //      images: [
-//         "../illustrations/Juicy.PNG",
+//         "../illustrations/Juicy.png",
 //          "../illustrations/mockup detail/Juicy-m1.png",
 //          "../illustrations/mockup detail/Juicy-m2.png" ]
 //  },
@@ -57,7 +57,7 @@ const db = getFirestore(app);
 //     id: 3,
 //     title: "Honey",
 //     price: "3099",
-//     image: "../illustrations/Honey.PNG",
+//     image: "../illustrations/Honey.png",
 //     type: "print",
 //     isBestSeller: true,
 //     collection: true,
@@ -72,7 +72,7 @@ const db = getFirestore(app);
 //     quantity: "1",
 //     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //     images: [
-//       "../illustrations/Honey.PNG",
+//       "../illustrations/Honey.png",
 //        "../illustrations/mockup detail/Honey-m1.png",
 //        "../illustrations/mockup detail/Honey-m2.png" ]
 // },
@@ -80,7 +80,7 @@ const db = getFirestore(app);
 //   id: 4,
 //   title: "Stella",
 //   price: "4099",
-//   image: "../illustrations/Stella.PNG",
+//   image: "../illustrations/Stella.png",
 //   type: "print",
 //   isBestSeller: true,
 //   collection: false,
@@ -95,7 +95,7 @@ const db = getFirestore(app);
 //   quantity: "1",
 //   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //   images: [
-//     "../illustrations/Stella.PNG",
+//     "../illustrations/Stella.png",
 //      "../illustrations/mockup detail/Stella-m1.png",
 //      "../illustrations/mockup detail/Stella-m2.png" ]
 // },
@@ -103,7 +103,7 @@ const db = getFirestore(app);
 //   id: 5,
 //   title: "Alice Melancholia",
 //   price: "6099",
-//   image: "../illustrations/AliceOne.PNG",
+//   image: "../illustrations/AliceOne.png",
 //   type: "print",
 //   isBestSeller: true,
 //   collection: true,
@@ -118,7 +118,7 @@ const db = getFirestore(app);
 //   quantity: "1",
 //   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //   images: [
-//     "../illustrations/AliceOne.PNG",
+//     "../illustrations/AliceOne.png",
 //      "../illustrations/mockup detail/AliceOne-m1.png",
 //      "../illustrations/mockup detail/AliceOne-m2.png" ]
 // },
@@ -126,7 +126,7 @@ const db = getFirestore(app);
 //   id: 6,
 //   title: "Alice Serenity",
 //   price: "6099",
-//   image: "../illustrations/AliceTwo.PNG",
+//   image: "../illustrations/AliceTwo.png",
 //   type: "print",
 //   isBestSeller: true,
 //   collection: true,
@@ -140,7 +140,7 @@ const db = getFirestore(app);
 // ],  quantity: "1",
 //   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //   images: [
-//     "../illustrations/AliceTwo.PNG",
+//     "../illustrations/AliceTwo.png",
 //      "../illustrations/mockup detail/AliceTwo-m1.png",
 //      "../illustrations/mockup detail/AliceTwo-m2.png" ]
 // },
@@ -162,7 +162,7 @@ const db = getFirestore(app);
 // ],  quantity: "1",
 //   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //   images: [
-//     "../illustrations/BagMerch.PNG",
+//     "../illustrations/BagMerch.png",
 //      "empty",
 //      "empty" ]
 // },
@@ -170,7 +170,7 @@ const db = getFirestore(app);
 //   id: 8,
 //   title: "Golden",
 //   price: "3099",
-//   image: "../illustrations/Golden.PNG",
+//   image: "../illustrations/Golden.png",
 //   type: "print",
 //   isBestSeller: false,
 //   collection: true,
@@ -185,7 +185,7 @@ const db = getFirestore(app);
 //   quantity: "1",
 //   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //   images: [
-//     "../illustrations/Golden.PNG",
+//     "../illustrations/Golden.png",
 //      "../illustrations/mockup detail/Golden-m1.png",
 //      "../illustrations/mockup detail/Golden-m2.png" ]
 // },
@@ -193,7 +193,7 @@ const db = getFirestore(app);
 //   id: 9,
 //   title: "Lady",
 //   price: "3099",
-//   image: "../illustrations/Lady_BeautyCollection.PNG",
+//   image: "../illustrations/Lady_BeautyCollection.png",
 //   type: "print",
 //   isBestSeller: true,
 //   collection: true,
@@ -208,7 +208,7 @@ const db = getFirestore(app);
 //   quantity: "1",
 //   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //   images: [
-//     "../illustrations/Lady_BeautyCollection.PNG",
+//     "../illustrations/Lady_BeautyCollection.png",
 //      "../illustrations/mockup detail/Lady_BeautyCollection-m1.png",
 //      "../illustrations/mockup detail/Lady_BeautyCollection-m2.png" ]
 // },
@@ -216,7 +216,7 @@ const db = getFirestore(app);
 //   id: 10,
 //   title: "Jazmín",
 //   price: "3099",
-//   image: "../illustrations/JazminBeautyCollection.PNG",
+//   image: "../illustrations/JazminBeautyCollection.png",
 //   type: "print",
 //   isBestSeller: true,
 //   collection: true,
@@ -231,7 +231,7 @@ const db = getFirestore(app);
 //   quantity: "1",
 //   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //   images: [
-//     "../illustrations/JazminBeautyCollection.PNG",
+//     "../illustrations/JazminBeautyCollection.png",
 //      "../illustrations/mockup detail/JazminBeautyCollection-m1.png",
 //      "../illustrations/mockup detail/JazminBeautyCollection-m2.png" ]
 // },
@@ -239,7 +239,7 @@ const db = getFirestore(app);
 // id: 11,
 // title: "Samantha",
 // price: "3099",
-// image: "../illustrations/Samantha_BeautyCollection.PNG",
+// image: "../illustrations/Samantha_BeautyCollection.png",
 // type: "print",
 // isBestSeller: false,
 // collection: true,
@@ -254,7 +254,7 @@ const db = getFirestore(app);
 // quantity: "1",
 // description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 // images: [
-//   "../illustrations/Samantha_BeautyCollection.PNG",
+//   "../illustrations/Samantha_BeautyCollection.png",
 //    "../illustrations/mockup detail/Samantha_BeautyCollection-m1.png",
 //    "../illustrations/mockup detail/Samantha_BeautyCollection-m2.png" ]
 // },
@@ -262,7 +262,7 @@ const db = getFirestore(app);
 //   id: 12,
 //   title: "Rachel",
 //   price: "3099",
-//   image: "../illustrations/RachelBeautyCollection.PNG",
+//   image: "../illustrations/RachelBeautyCollection.png",
 //   type: "print",
 //   isBestSeller: false,
 //   collection: true,
@@ -277,7 +277,7 @@ const db = getFirestore(app);
 //   quantity: "1",
 //   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //   images: [
-//     "../illustrations/RachelBeautyCollection.PNG",
+//     "../illustrations/RachelBeautyCollection.png",
 //      "../illustrations/mockup detail/RachelBeautyCollection-m1.png",
 //      "../illustrations/mockup detail/RachelBeautyCollection-m2.png" ]
 //   },
@@ -300,7 +300,7 @@ const db = getFirestore(app);
 //     quantity: "1",
 //     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //     images: [
-//       "../illustrations/GambitStickers-4.PNG",
+//       "../illustrations/GambitStickers-4.png",
 //        "../illustrations/GambitSticker-1.png",
 //        "../illustrations/GambitSticker-3.png" ]
 //     },
@@ -323,7 +323,7 @@ const db = getFirestore(app);
 //       quantity: "1",
 //       description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //       images: [
-//         "../illustrations/MinimalistRhinoStamp.PNG",
+//         "../illustrations/MinimalistRhinoStamp.png",
 //          "../illustrations/RhinoStamp1.png",
 //          "../illustrations/RhinoStamp2.png" ]
 //       },
@@ -346,7 +346,7 @@ const db = getFirestore(app);
 //         quantity: "1",
 //         description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //         images: [
-//           "../illustrations/MaximalistRhinoStamp.PNG",
+//           "../illustrations/MaximalistRhinoStamp.png",
 //            "../illustrations/RhinoStamp1.png",
 //            "../illustrations/RhinoStamp2.png" ]
 //         },
@@ -354,7 +354,7 @@ const db = getFirestore(app);
 //           id: 16,
 //           title: "Chilling",
 //           price: "2099",
-//           image: "../illustrations/Chill.PNG",
+//           image: "../illustrations/Chill.png",
 //           type: "print",
 //           isBestSeller: true,
 //           collection: false,
@@ -369,7 +369,7 @@ const db = getFirestore(app);
 //           quantity: "1",
 //           description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //           images: [
-//             "../illustrations/Chill.PNG",
+//             "../illustrations/Chill.png",
 //              "../illustrations/mockup detail/Chill-m1.png",
 //              "../illustrations/mockup detail/Chill-m2.png" ]
 //           },
@@ -377,7 +377,7 @@ const db = getFirestore(app);
 //             id: 17,
 //             title: "Sunday",
 //             price: "2099",
-//             image: "../illustrations/Sunday.PNG",
+//             image: "../illustrations/Sunday.png",
 //             type: "print",
 //             isBestSeller: true,
 //             collection: false,
@@ -392,7 +392,7 @@ const db = getFirestore(app);
 //             quantity: "1",
 //             description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //             images: [
-//               "../illustrations/Sunday.PNG",
+//               "../illustrations/Sunday.png",
 //                "../illustrations/mockup detail/Sunday-m1.png",
 //                "../illustrations/mockup detail/Sunday-m2.png" ]
 //             },
@@ -400,7 +400,7 @@ const db = getFirestore(app);
 //               id: 18,
 //               title: "Classy",
 //               price: "1799",
-//               image: "../illustrations/Classy.PNG",
+//               image: "../illustrations/Classy.png",
 //               type: "print",
 //               isBestSeller: false,
 //               collection: false,
@@ -415,7 +415,7 @@ const db = getFirestore(app);
 //               quantity: "1",
 //               description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //               images: [
-//                 "../illustrations/Classy.PNG",
+//                 "../illustrations/Classy.png",
 //                  "../illustrations/mockup detail/Classy-m1.png",
 //                  "../illustrations/mockup detail/Classy-m2.png" ]
 //               },
@@ -423,7 +423,7 @@ const db = getFirestore(app);
 //                 id: 19,
 //                 title: "Summer",
 //                 price: "2099",
-//                 image: "../illustrations/Summer.PNG",
+//                 image: "../illustrations/Summer.png",
 //                 type: "print",
 //                 isBestSeller: false,
 //                 collection: false,
@@ -438,7 +438,7 @@ const db = getFirestore(app);
 //                 quantity: "1",
 //                 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //                 images: [
-//                   "../illustrations/Summer.PNG",
+//                   "../illustrations/Summer.png",
 //                    "../illustrations/mockup detail/Summer-m1.png",
 //                    "../illustrations/mockup detail/Summer-m2.png" ]
 //                 },
@@ -446,7 +446,7 @@ const db = getFirestore(app);
 //                   id: 20,
 //                   title: "Pastel",
 //                   price: "1099",
-//                   image: "../illustrations/SafariPastel.PNG",
+//                   image: "../illustrations/SafariPastel.png",
 //                   type: "print",
 //                   isBestSeller: false,
 //                   collection: false,
@@ -461,7 +461,7 @@ const db = getFirestore(app);
 //                   quantity: "1",
 //                   description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //                   images: [
-//                     "../illustrations/SafariPastel.PNG",
+//                     "../illustrations/SafariPastel.png",
 //                      "../illustrations/mockup detail/SafariPastel-m1.png",
 //                      "../illustrations/mockup detail/SafariPastel-m2.png" ]
 //                   },
@@ -469,7 +469,7 @@ const db = getFirestore(app);
 //                     id: 21,
 //                     title: "Michael",
 //                     price: "1099",
-//                     image: "../illustrations/Michael.PNG",
+//                     image: "../illustrations/Michael.png",
 //                     type: "print",
 //                     isBestSeller: false,
 //                     collection: false,
@@ -484,7 +484,7 @@ const db = getFirestore(app);
 //                     quantity: "1",
 //                     description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //                     images: [
-//                       "../illustrations/Michael.PNG",
+//                       "../illustrations/Michael.png",
 //                        "../illustrations/mockup detail/Michael-m1.png",
 //                        "../illustrations/mockup detail/Michael-m2.png" ]
 //                     },
@@ -492,7 +492,7 @@ const db = getFirestore(app);
 //                       id: 21,
 //                       title: "Kitty",
 //                       price: "3099",
-//                       image: "../illustrations/Kitty.PNG",
+//                       image: "../illustrations/Kitty.png",
 //                       type: "print",
 //                       isBestSeller: true,
 //                       collection: false,
@@ -507,7 +507,7 @@ const db = getFirestore(app);
 //                       quantity: "1",
 //                       description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //                       images: [
-//                         "../illustrations/Kitty.PNG",
+//                         "../illustrations/Kitty.png",
 //                          "../illustrations/mockup detail/Kitty-m1.png",
 //                          "../illustrations/mockup detail/Kitty-m2.png" ]
 //                       },
@@ -515,7 +515,7 @@ const db = getFirestore(app);
 //                         id: 22,
 //                         title: "Mariana",
 //                         price: "3099",
-//                         image: "../illustrations/Mariana.PNG",
+//                         image: "../illustrations/Mariana.png",
 //                         type: "print",
 //                         isBestSeller: true,
 //                         collection: false,
@@ -530,7 +530,7 @@ const db = getFirestore(app);
 //                         quantity: "1",
 //                         description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //                         images: [
-//                           "../illustrations/Mariana.PNG",
+//                           "../illustrations/Mariana.png",
 //                            "../illustrations/mockup detail/Mariana-m1.png",
 //                            "../illustrations/mockup detail/Mariana-m2.png" ]
 //                         },
@@ -538,7 +538,7 @@ const db = getFirestore(app);
 //                           id: 23,
 //                           title: "Kiki's Delivery Service",
 //                           price: "3099",
-//                           image: "../illustrations/Kiki.PNG",
+//                           image: "../illustrations/Kiki.png",
 //                           type: "print",
 //                           isBestSeller: true,
 //                           collection: false,
@@ -553,7 +553,7 @@ const db = getFirestore(app);
 //                           quantity: "1",
 //                           description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //                           images: [
-//                             "../illustrations/Kiki.PNG",
+//                             "../illustrations/Kiki.png",
 //                              "../illustrations/mockup detail/Kiki-m1.png",
 //                              "../illustrations/mockup detail/Kiki-m2.png" ]
 //                           },
@@ -561,7 +561,7 @@ const db = getFirestore(app);
 //                             id: 24,
 //                             title: "Japan",
 //                             price: "3099",
-//                             image: "../illustrations/Japan.PNG",
+//                             image: "../illustrations/Japan.png",
 //                             type: "print",
 //                             isBestSeller: true,
 //                             collection: false,
@@ -576,7 +576,7 @@ const db = getFirestore(app);
 //                             quantity: "1",
 //                             description: "Lorem ipsum dolor sit amet consectetur adipiscing elit egestas, mattis vel a dictum elementum risus nisi sem dictumst,",
 //                             images: [
-//                               "../illustrations/Japan.PNG",
+//                               "../illustrations/Japan.png",
 //                                "../illustrations/mockup detail/Japan-m1.png",
 //                                "../illustrations/mockup detail/Japan-m2.png" ]
 //                             },

@@ -1,0 +1,64 @@
+// ✅ Checkout section
+// Variables
+$dark-text: #1d3137;
+$blue-text: #0783f5;
+$yellow-text: #f2b30f;
+$orange-btn: #f2994a;
+$medium: 1.5em;
+$p-text: 0.5em;
+// imports
+@import "checkout-header";
+@import "checkout-info";
+// code----
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+}
+body {
+  max-width: 1440px;
+  overflow-x: hidden;
+  padding-top: 1em;
+}
+.title {
+  font-family: bely-display, sans-serif;
+}
+.title-lighter {
+  font-family: bely, sans-serif;
+}
+.paragraph {
+  font-family: muli, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+.select {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  max-width: 120px;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 1em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 3;
+  background-color: #f4f1f9;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  box-shadow: rgba(17, 14, 202, 0.35) 0px 5px 15px;
+}
+.btn-fill {
+  text-align: center;
+  font-family: "Muli", sans-serif;
+  text-decoration: none;
+  color: cornsilk;
+  font-weight: 500;
+  font-size: 0.8em;
+  min-width: 150px;
+  padding: 11px;
+  border-radius: 50px;
+  background: $orange-btn;
+}

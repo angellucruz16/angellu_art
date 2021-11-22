@@ -332,6 +332,11 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
 }
 
 body {

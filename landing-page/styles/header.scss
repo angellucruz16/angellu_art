@@ -74,7 +74,7 @@ ul {
     right: -100%;
     background-color: rgb(55, 13, 243);
     width: 60%;
-    height: 45vh;
+    height: 56vh;
     padding: 11px 0;
     z-index: 100;
     transition: 0.5s;
@@ -87,6 +87,7 @@ ul {
     }
     &__item {
       margin: 2rem 0;
+      color: white;
     }
   }
   .show {

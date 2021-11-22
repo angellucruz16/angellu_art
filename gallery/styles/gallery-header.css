@@ -155,7 +155,7 @@ ul {
     right: -100%;
     background-color: #370df3;
     width: 60%;
-    height: 45vh;
+    height: 56vh;
     padding: 11px 0;
     z-index: 100;
     -webkit-transition: 0.5s;
@@ -175,6 +175,7 @@ ul {
   }
   .nav__item {
     margin: 2rem 0;
+    color: white;
   }
   .show {
     right: 0;

@@ -16,9 +16,13 @@ $p-text: 0.5em;
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  color: inherit;
+}
 body {
-  max-width: 100vw;
+  max-width: 1440px;
   overflow-x: hidden;
+  padding-top: 1em;
 }
 .title {
   font-family: bely-display, sans-serif;

@@ -155,7 +155,7 @@ ul {
     right: -100%;
     background-color: #370df3;
     width: 60%;
-    height: 45vh;
+    height: 56vh;
     padding: 11px 0;
     z-index: 100;
     -webkit-transition: 0.5s;
@@ -175,6 +175,7 @@ ul {
   }
   .nav__item {
     margin: 2rem 0;
+    color: white;
   }
   .show {
     right: 0;
@@ -214,10 +215,6 @@ ul {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
-  padding: 1em;
 }
 
 .card {
@@ -359,7 +356,7 @@ body {
 
 .products {
   width: 100%;
-  max-width: 1500px;
+  max-width: 994px;
   display: -ms-grid;
   display: grid;
   gap: 2em;
@@ -383,6 +380,42 @@ body {
   display: block;
 }
 
+@media all and (max-width: 1061px) {
+  .products {
+    width: 100%;
+    max-width: 785px;
+    display: -ms-grid;
+    display: grid;
+    gap: 2em;
+    -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+@media all and (max-width: 868px) {
+  .products {
+    width: 100%;
+    max-width: 612px;
+    display: -ms-grid;
+    display: grid;
+    gap: 2em;
+    -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+@media all and (max-width: 375px) {
+  .products {
+    width: 100%;
+    max-width: 612px;
+    display: -ms-grid;
+    display: grid;
+    gap: 2em;
+    -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -390,9 +423,14 @@ body {
           box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+}
+
 body {
-  max-width: 100vw;
+  max-width: 1440px;
   overflow-x: hidden;
+  padding-top: 1em;
 }
 
 .title {

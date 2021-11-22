@@ -78,3 +78,30 @@ body {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
+@media all and (max-width: 866px) {
+  .product-view {
+    &__template {
+      width: 84vw;
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    &__template__info__price {
+      display: none;
+    }
+    &__template__info__data {
+      padding-left: 4px;
+    }
+    &__template--img {
+      margin: 0px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      left: 0;
+    }
+  }
+}

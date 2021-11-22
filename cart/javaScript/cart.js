@@ -9,7 +9,7 @@ const db = getFirestore(app);
 // ✅♍️ cart js
 const cartSection = document.getElementById("cart");
 const totalSection = document.getElementById("subtotal");
-// const checkoutForm = document.getElementById("checkout");
+const checkoutForm = document.getElementById("checkout");
 
 let total = 0;
 let cart = [];
@@ -19,13 +19,12 @@ const getMyCart = () =>{
     const cart = localStorage.getItem("cart");
     return cart ? JSON.parse(cart) : [];
 };
-console.log(getMyCart());
+
 
 const removeProduct = (productId) => {
   const cart = getMyCart();
   const newCart = cart.filter(product => product.id !== productId);
   
-  // slice approach
   localStorage.setItem("cart", JSON.stringify(newCart));
 
   renderMyCart();
@@ -49,20 +48,6 @@ const getUserInfo = async (userId) => {
       console.log(e);
   }
 }
-
-// ✅♍️ Render prodUct in cart template------------------
-const renderMyCart = (cart) => {
-  cartSection.innerHTML = "";
-  total = 0;
-
-  cart.forEach(product => {
-      total += parseInt(product.price);
-      renderProduct(product);
-  });
-
-  totalSection.innerText = `${formatCurrency(total)}`;
-};
-
 
 const renderProduct =  (product) => {
     const newProduct = document.createElement("li");
@@ -102,20 +87,10 @@ const renderProduct =  (product) => {
       <p>${formatCurrency(product.price)}</p>
     </div>
     <button class="button-default" id="button-delete">
-      <img src="./img/s2-cart-product-view/delete-button.svg" alt="" />
+      <img src="./img/s2-cart-product-view/delete-button.svg" alt="removebtn" />
     </button>
   </div>`;
       
-    //   const newProducts = productsCopy.filter((currentProduct) => {
-    //     console.log(product.id, currentProduct.id);
-    //     return currentProduct.id !== product.id;
-    //   });
-    //   console.log(newProducts);
-    //   localStorage.setItem("cart", JSON.stringify(newProducts));
-    //   console.log(getMyCart());
-    //   renderMyCart();
-    // });
-
     cartSection.appendChild(newProduct);
 
     newProduct.addEventListener("click", e => {
@@ -125,50 +100,77 @@ const renderProduct =  (product) => {
   });
 };
 
+// ✅♍️ Render prodUct in cart template------------------
+const renderMyCart = (cart) => {
+  cartSection.innerHTML = "";
+  total = 0;
+
+  cart.forEach(product => {
+      total += parseInt(product.price);
+      renderProduct(product);
+  });
+
+  totalSection.innerText = `${formatCurrency(total)}`;
+};
+
 const deleteCart = async () => {
   try {
       await deleteDoc(doc(db, "cart", userLogged.uid));
       renderMyCart([]);
-      console.log("Carrito de compras actualizado...");
+      console.log("updated cart...");
   } catch(e) {
       console.log(e);
   }
 };
 
+const createOrder = async (userFields) => {
+  try {
+      const order = await addDoc(collection(db, "orders"), {
+          ...userFields, // spread 
+          products: cart,
+          total,
+          email: userLogged.email,
+          status: "pending",
+      });
+      alert(`Thank you so much! your ID: ${order.id}`);
 
-console.log (total);
-
-// function to create order
-
-
-// checkoutForm.addEventListener("submit", e => {
-//   e.preventDefault();
-
-//   const name = checkoutForm.name.value;
-//   const number = checkoutForm.number.value;
-//   const code = checkoutForm.code.value;
-//   const email = checkoutForm.email.value;
-//   const address = checkoutForm.address.value;
+      deleteCart();
+  } catch (e) {
+      console.log(e)
+  }
+};
 
 
-//   const userFields = {
-//       name,
-//       number,
-//       code,
-//       email,
-//       address,
-//   };
 
-//   if (cart.length) {
-//       if (name && number && code && email && address) {
-//           createOrder(userFields);
-//       } else {
-//           alert("Completa todos los campos...");
-//       }
-//   } else {
-//       alert("Selecciona algunos productos...")
-//   }
-// });
+checkoutForm.addEventListener("submit", e => {
+  e.preventDefault();
+
+  const name = checkoutForm.name.value;
+  const number = checkoutForm.number.value;
+  const code = checkoutForm.code.value;
+  const email = checkoutForm.email.value;
+  const address = checkoutForm.address.value;
+
+
+  const userFields = {
+      name,
+      number,
+      code,
+      email,
+      address,
+  };
+
+  if (cart.length) {
+      if (name && number && code && email && address) {
+          createOrder(userFields);
+      } else {
+          alert("Please complet all fields...");
+      }
+  } else {
+      alert("Add products in your cart")
+  }
+});
+
 
 
 onAuthStateChanged(auth, async (user) => {
@@ -190,6 +192,7 @@ onAuthStateChanged(auth, async (user) => {
 });
 
 // 😵 so i can use this function in other js file 
-export{
-  deleteCart,
-}
+// export{
+//   deleteCart,
+  
+// }

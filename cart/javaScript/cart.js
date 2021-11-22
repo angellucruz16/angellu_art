@@ -9,6 +9,7 @@ const db = getFirestore(app);
 // ✅♍️ cart js
 const cartSection = document.getElementById("cart");
 const totalSection = document.getElementById("subtotal");
+// const checkoutForm = document.getElementById("checkout");
 
 let total = 0;
 let cart = [];
@@ -64,9 +65,9 @@ const renderMyCart = (cart) => {
 
 
 const renderProduct =  (product) => {
-    const newProdct = document.createElement("li");
-    newProdct.className = "product-view__template";
-    newProdct.innerHTML = `
+    const newProduct = document.createElement("li");
+    newProduct.className = "product-view__template";
+    newProduct.innerHTML = `
     <img
     class="product-view__template--img"
     src="${product.image}"
@@ -115,7 +116,7 @@ const renderProduct =  (product) => {
     //   renderMyCart();
     // });
 
-    cartSection.appendChild(newProdct);
+    cartSection.appendChild(newProduct);
 
     newProduct.addEventListener("click", e => {
       if (e.target.tagName === "BUTTON") {
@@ -133,7 +134,41 @@ const deleteCart = async () => {
       console.log(e);
   }
 };
+
+
 console.log (total);
+
+// function to create order
+
+
+// checkoutForm.addEventListener("submit", e => {
+//   e.preventDefault();
+
+//   const name = checkoutForm.name.value;
+//   const number = checkoutForm.number.value;
+//   const code = checkoutForm.code.value;
+//   const email = checkoutForm.email.value;
+//   const address = checkoutForm.address.value;
+
+
+//   const userFields = {
+//       name,
+//       number,
+//       code,
+//       email,
+//       address,
+//   };
+
+//   if (cart.length) {
+//       if (name && number && code && email && address) {
+//           createOrder(userFields);
+//       } else {
+//           alert("Completa todos los campos...");
+//       }
+//   } else {
+//       alert("Selecciona algunos productos...")
+//   }
+// });
 
 
 onAuthStateChanged(auth, async (user) => {
@@ -153,3 +188,8 @@ onAuthStateChanged(auth, async (user) => {
       renderMyCart(cart);
   }
 });
+
+// 😵 so i can use this function in other js file 
+export{
+  deleteCart,
+}

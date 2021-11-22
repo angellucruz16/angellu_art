@@ -13,6 +13,7 @@ let products = [];
 let userLogged = null;
 let cart = [];
 
+
 const getAllProducts = async() => {
     const collectionRef = collection(db, "products");
     const { docs } = await getDocs(collectionRef);

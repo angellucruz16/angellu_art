@@ -46,50 +46,83 @@
     </header>
     <!--  ✅♍️ S1 Title  -->
     <section class="hero">
-      <h1 class="hero__title title">Checkout</h1>
+      <h1 class="hero__title title">Add new product</h1>
     </section>
 
-    <!--  ✅♍️ S2 image  -->
-
-    <div class="order_container">
-      <div class="img__main">
+    <div class="product container">
+      <div class="product__preview">
+        <h3>Product Preview</h3>
+        <img src="" alt="" id="preview" />
         <div>
-          <h2>Thank you for supporting me!</h2>
-          <div>
-            <img src="" alt="" />
-            <p>Your order will be ready soon :)</p>
-          </div>
+          <!-- 🎃🎃🎃🎃all three images here -->
         </div>
       </div>
 
       <!-- <!--  ✅♍️ Aside info----------------- -->
-      <aside class="user__info">
-        <h3>Payment Details</h3>
-        <p>
-          Complete your purchase by providing your <br />
-          payment details.
-        </p>
+      <aside class="product__info">
+        <h3>Product Info</h3>
+        <form id="createProduct">
+          <!-- 🎃🎃 -->
+          <div class="product__info__first-third">
+            <!-- one -->
+            <div>
+              <p>Title</p>
+              <input type="text" name="name" placeholder="Product Title" />
+            </div>
+            <!-- two -->
+            <div>
+              <p>Price</p>
+              <input type="number" name="price" placeholder="Product price" />
+            </div>
+            <!-- three -->
+            <div>
+              <label for="type">Type</label>
+              <select name="type">
+                <option value="print">Print</option>
+                <option value="sticker">sticker</option>
+                <option value="merch">Merch</option>
+              </select>
+            </div>
+          </div>
 
-        <form action="">
-          <label>Card Name <input type="text" id="name" name="name" /> </label>
-          <label
-            >Card Number<input type="number" id="number" name="number"
-          /></label>
-          <label
-            >Secret Code<input type="number" id="code" name="code"
-          /></label>
-          <label>Email<input type="email" id="email" name="email" /></label>
-          <label>Address<input type="text" id="addres" name="addres" /></label>
+          <!-- 🎃🎃  Description-->
+          <div class="product__info__middle-third">
+            <label for="description">Description</label>
+            <textarea name="description"></textarea>
+          </div>
+
+          <!-- 🎃🎃 -->
+          <div class="product__info__last-third">
+            <!-- one -->
+            <div class="images">
+              <div class="images__input">
+                <label for="name">Main Image</label>
+                <input
+                  type="file"
+                  accept=".jpg,.png"
+                  name="image"
+                  id="mainImage"
+                />
+              </div>
+              <img src="" alt="" id="preview" />
+            </div>
+            <!-- two -->
+            <div class="images">
+              <label for="gallery">Galería</label>
+              <input type="file" accept=".jpg,.png" multiple name="gallery" />
+            </div>
+          </div>
+
+          <!-- 🎃🎃🎃🎃put line here -->
+
+          <input
+            class="create__button"
+            type="submit"
+            value="Agregar producto"
+            id="submitButton"
+          />
+          <p id="feedback"></p>
         </form>
-
-        <div>
-          <p>Total</p>
-          <p>$$$$</p>
-        </div>
-
-        <!-- line hereee -->
-
-        <button>CONFIRM</button>
       </aside>
     </div>
 

@@ -1,7 +1,18 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
+import { getFirestore, doc, getDoc, addDoc, collection, deleteDoc } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+const db = getFirestore(app);
+
 // ✅♍️ cart js
 const cartSection = document.getElementById("cart");
 const totalSection = document.getElementById("subtotal");
+
 let total = 0;
+let cart = [];
+let userLogged = {};
 
 const getMyCart = () =>{
     const cart = localStorage.getItem("cart");
@@ -9,16 +20,48 @@ const getMyCart = () =>{
 };
 console.log(getMyCart());
 
-// ✅♍️ Render prodUct in cart template------------------
-const renderMyCart = () => {
-  cartSection.innerHTML = "";
+const removeProduct = (productId) => {
   const cart = getMyCart();
+  const newCart = cart.filter(product => product.id !== productId);
+  
+  // slice approach
+  localStorage.setItem("cart", JSON.stringify(newCart));
+
+  renderMyCart();
+
+};
+
+const getFirebaseCart = async (userId) => {
+  const docRef = doc(db, "cart", userId);
+  const docSnap = await getDoc(docRef);
+  return docSnap.exists() ? docSnap.data() : {
+      products: []
+  }
+};
+
+const getUserInfo = async (userId) => {
+  try {
+      const docRef = doc(db, "users", userId);
+      const docSnap = await getDoc(docRef);
+      return docSnap.data();
+  } catch (e) {
+      console.log(e);
+  }
+}
+
+// ✅♍️ Render prodUct in cart template------------------
+const renderMyCart = (cart) => {
+  cartSection.innerHTML = "";
+  total = 0;
+
   cart.forEach(product => {
       total += parseInt(product.price);
       renderProduct(product);
   });
+
   totalSection.innerText = `${formatCurrency(total)}`;
-}
+};
+
 
 const renderProduct =  (product) => {
     const newProdct = document.createElement("li");
@@ -61,24 +104,52 @@ const renderProduct =  (product) => {
       <img src="./img/s2-cart-product-view/delete-button.svg" alt="" />
     </button>
   </div>`;
-
-    const deteleBtn = newProdct.querySelector("#button-delete");
-    deteleBtn.addEventListener ("click", (e) => {
-      const productsCopy = getMyCart();
-      const newProducts = productsCopy.filter((currentProduct) => {
-        console.log(product.id, currentProduct.id);
-        return currentProduct.id !== product.id;
-      });
-      console.log(newProducts);
-      localStorage.setItem("cart", JSON.stringify(newProducts));
-      console.log(getMyCart());
-      renderMyCart();
-    });
+      
+    //   const newProducts = productsCopy.filter((currentProduct) => {
+    //     console.log(product.id, currentProduct.id);
+    //     return currentProduct.id !== product.id;
+    //   });
+    //   console.log(newProducts);
+    //   localStorage.setItem("cart", JSON.stringify(newProducts));
+    //   console.log(getMyCart());
+    //   renderMyCart();
+    // });
 
     cartSection.appendChild(newProdct);
+
+    newProduct.addEventListener("click", e => {
+      if (e.target.tagName === "BUTTON") {
+          removeProduct(product.id);
+      }
+  });
 };
-// 🥓 No funciona me sale NaN
 
-
-renderMyCart();
+const deleteCart = async () => {
+  try {
+      await deleteDoc(doc(db, "cart", userLogged.uid));
+      renderMyCart([]);
+      console.log("Carrito de compras actualizado...");
+  } catch(e) {
+      console.log(e);
+  }
+};
 console.log (total);
+
+
+onAuthStateChanged(auth, async (user) => {
+  if (user) {
+      const result = await getFirebaseCart(user.uid);
+      cart = result.products;
+      renderMyCart(cart);
+
+      const userInfo = await getUserInfo(user.uid);
+      userLogged = {
+          ...user,
+          ...userInfo
+      };
+      console.log(userLogged);
+  } else {
+      cart = getMyCart();
+      renderMyCart(cart);
+  }
+});

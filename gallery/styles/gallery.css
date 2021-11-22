@@ -38,7 +38,7 @@ ul {
   .hero__decor {
     position: absolute;
     max-width: 180px;
-    right: 5%;
+    right: 221px;
     top: 8px;
   }
   .header {
@@ -109,8 +109,8 @@ ul {
   .hero__decor {
     position: absolute;
     max-width: 100px;
-    right: -28px;
-    top: -7px;
+    right: 9px;
+    top: 100px;
   }
   .header {
     display: -webkit-box;

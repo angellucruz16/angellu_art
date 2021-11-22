@@ -57,68 +57,76 @@
           <!-- 🎃🎃🎃🎃all three images here -->
         </div>
       </div>
-      <!-- Aside info----------------- -->
+
+      <!-- <!--  ✅♍️ Aside info----------------- -->
       <aside class="product__info">
         <h3>Product Info</h3>
         <form id="createProduct">
-            <!-- 🎃🎃 -->
+          <!-- 🎃🎃 -->
           <div class="product__info__first-third">
+            <!-- one -->
             <div>
               <p>Title</p>
-              <input type="text" name="name" id="title" />
+              <input type="text" name="name" placeholder="Product Title" />
             </div>
-            <div>
-              <label for="collection">Collection</label>
-              <select name="collection" id="collection">
-                <option value="true">True</option>
-                <option value="false">False</option>
-              </select>
-            </div>
+            <!-- two -->
             <div>
               <p>Price</p>
-              <input type="number" name="name" id="price" />
+              <input type="number" name="price" placeholder="Product price" />
             </div>
+            <!-- three -->
             <div>
-              <label for="name">Type</label>
-              <select name="type" id="type-select">
+              <label for="type">Type</label>
+              <select name="type">
                 <option value="print">Print</option>
                 <option value="sticker">sticker</option>
                 <option value="merch">Merch</option>
               </select>
             </div>
           </div>
-          <!-- 🎃🎃 -->
-          <div class="product__info__middle-third>
+
+          <!-- 🎃🎃  Description-->
+          <div class="product__info__middle-third">
             <label for="description">Description</label>
-            <textarea
-              name="description"
-              id="description"
-              cols="30"
-              rows="10"
-            ></textarea>
+            <textarea name="description"></textarea>
           </div>
+
           <!-- 🎃🎃 -->
-          <div class="product__info__last-third>
-            <div>
-              <label for="name">Main Image</label>
-              <input
-                type="file"
-                accept="png, jpg"
-                name="image"
-                id="mainImage"
-              />
+          <div class="product__info__last-third">
+            <!-- one -->
+            <div class="images">
+              <div class="images__input">
+                <label for="name">Main Image</label>
+                <input
+                  type="file"
+                  accept=".jpg,.png"
+                  name="image"
+                  id="mainImage"
+                />
+              </div>
+              <img src="" alt="" id="preview" />
             </div>
-            <div>
-              <label for="gallery">Gallery Images</label>
-              <input type="file" multiple name="gallery" />
+            <!-- two -->
+            <div class="images">
+              <label for="gallery">Galería</label>
+              <input type="file" accept=".jpg,.png" multiple name="gallery" />
             </div>
           </div>
+
           <!-- 🎃🎃🎃🎃put line here -->
-          <input type="submit" value="ADD PRODUCT" id="submitButton" />
+
+          <input
+            class="create__button"
+            type="submit"
+            value="Agregar producto"
+            id="submitButton"
+          />
+          <p id="feedback"></p>
         </form>
       </aside>
     </div>
 
     <script src="../utils.js"></script>
+    <script type="module" src="./javaScript/create-product.js"></script>
   </body>
 </html>

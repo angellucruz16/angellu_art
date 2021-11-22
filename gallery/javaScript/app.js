@@ -91,11 +91,14 @@ const productTemplate = (item) => {
 </svg>
     </button>`
     }
+
+    const thumbnail = "https://lh3.googleusercontent.com/proxy/4-9vwlusvTGHW6fSzDLBcOEmWhInH5HefCQ2w1yBGYWEhrXPkZ_VVSp2XxWz1L50tDlL85Bxh9uQ98R2GQf6P1em4caM-2gQUcoyiBGNVWpOxyLmzlMMmDgoKYTAEkM";
+
     // ✅♍️ Change HTML--------------------------------------------
     product.innerHTML = `
     <header class="card__header">
       <img
-        src="${item.image}"
+        src="${item.image != '' ? item.image : thumbnail}"
         alt="${item.image}"
       />
       <div class="card__out-stock">

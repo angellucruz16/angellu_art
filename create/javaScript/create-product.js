@@ -46,31 +46,54 @@ const createProduct = async () => {
     const mainImage = createProductForm.image.files[0];
     const gallery = createProductForm.gallery.files;
 
-    const urlMainImage = await uploadMainImage(mainImage); 
 
     console.log(mainImage);
 
     if (name && price && description && type && mainImage) {
-        await addDoc(collection(db, "products"), {
-            title,
-            price,
-            description,
-            type,
-            collection: false,
-            image: urlMainImage,
-            images: galleryImages,
-        }); 
+        feedback.innerText = "Uploading product...";
+        try {
+             
+            const urlMainImage = await uploadMainImage(mainImage);
+            console.log(urlMainImage);
+            let galleryImages = [];
 
-    } else{
+
+            if (gallery.length) {
+                const galleryUrls = await uploadGallery([...gallery]);
+                galleryImages = await Promise.all(galleryUrls);
+            }
+
+            await addDoc(collection(db, "products"), {
+                name,
+                price,
+                image: urlMainImage,
+                type,
+                isBestSeller: false,
+                collection: false,
+                collectionName: "",
+                inStock: true,
+                isAdded: false,
+                size: [
+                    "13x16",
+                    "15x15",
+                    "25x13"
+                ],
+                quantity: "1",
+                images: galleryImages,
+                description,
+            }); 
+            feedback.innerText = "Product uploaded";
+            } catch (e) {
+                feedback.innerText = "Something went wrong!";
+                console.log(e);
+            }   
+    } else {
         console.log("complete all fields");
     }
-} 
+};
 
 
-
-//Acsess image fro url
-
-// create product
+// create product button
 createProductForm.addEventListener("submit", e => {
     e.preventDefault();
     createProduct();

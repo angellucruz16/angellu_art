@@ -1,16 +1,12 @@
 $yellow-text: #f2b30f;
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-}
+
 @media all and (min-width: 600px) {
   .header {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 1rem 0;
     align-items: center;
+    padding: 1rem 0;
     &__toggle {
       display: none;
     }

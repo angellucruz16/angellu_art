@@ -14,60 +14,64 @@
   </head>
   <body>
     <!--  ✅ S1 Header -->
-    <header class="header">
-      <div class="logo">
-        <img src="../illustrations/header/logo.svg" alt="logo" />
-      </div>
-      <nav class="nav" id="nav-menu">
+    <div class="landing">
+      <header class="header">
+        <div class="logo">
+          <img src="../illustrations/header/logo.svg" alt="logo" />
+        </div>
+        <nav class="nav" id="nav-menu">
+          <img
+            src="../illustrations/header/list-two.svg"
+            alt="close"
+            class="header__close"
+            id="close-menu"
+          />
+          <ul class="nav__list paragraph">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">home</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">about</a></li>
+            <li class="nav__item">
+              <a href="../gallery/index.html" class="nav__link">gallery</a>
+            </li>
+            <li class="nav__item">
+              <a href="../cart/index.html" class="nav__link">cart</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">profile</a></li>
+          </ul>
+        </nav>
         <img
-          src="../illustrations/header/list-two.svg"
-          alt="close"
-          class="header__close"
-          id="close-menu"
+          src="../illustrations/header/menu_black_24dp.svg"
+          alt=""
+          class="header__toggle"
+          id="toggle-menu"
         />
-        <ul class="nav__list paragraph">
-          <li class="nav__item">
-            <a href="./index.html" class="nav__link">home</a>
-          </li>
-          <li class="nav__item"><a href="#" class="nav__link">about</a></li>
-          <li class="nav__item">
-            <a href="../gallery/index.html" class="nav__link">gallery</a>
-          </li>
-          <li class="nav__item">
-            <a href="../cart/index.html" class="nav__link">cart</a>
-          </li>
-          <li class="nav__item"><a href="#" class="nav__link">profile</a></li>
-        </ul>
-      </nav>
-      <img
-        src="../illustrations/header/menu_black_24dp.svg"
-        alt=""
-        class="header__toggle"
-        id="toggle-menu"
-      />
-    </header>
+      </header>
+    </div>
     <!-- ✅ S1 Hero -->
     <section class="hero">
-      <img
-        class="hero__img"
-        src="./img/s1-header/s1-hero-img.png"
-        alt="hero img 1"
-      />
-      <img
-        class="hero__img2"
-        src="./img/s1-header/s1-hero-2.png"
-        alt="hero image 2"
-      />
-      <div class="hero__container">
-        <!-- title -->
-        <div class="title">
-          <img src="./img/s1-header/glitter.svg" />
-          <h1>Welcome</h1>
-        </div>
-        <!-- subtitle -->
-        <div class="paragraph">
-          <p>*</p>
-          <p>new collection <br />available</p>
+      <div class="hero__img__container">
+        <img
+          class="hero__img"
+          src="./img/s1-header/s1-hero-img.png"
+          alt="hero img 1"
+        />
+        <img
+          class="hero__img2"
+          src="./img/s1-header/s1-hero-2.png"
+          alt="hero image 2"
+        />
+        <div class="hero__img__container__title">
+          <!-- title -->
+          <div class="title">
+            <img src="./img/s1-header/glitter.svg" />
+            <h1>Welcome</h1>
+          </div>
+          <!-- subtitle -->
+          <div class="paragraph">
+            <p>*</p>
+            <p>new collection <br />available</p>
+          </div>
         </div>
       </div>
     </section>

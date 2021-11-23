@@ -1,83 +1,150 @@
 // ✅ Hero section
-.hero {
-  position: relative;
-  width: 100vw;
-  display: flex;
-
-  &__img {
-    display: none;
-  }
-  &__img2 {
-    display: block;
+$dark-text: #1d3137;
+@media only screen and (min-width: 1440px) {
+  .hero {
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 80vw;
+    &__img__container {
+      position: relative;
+    }
+    &__img {
+      display: none;
+    }
+    &__img2 {
+      position: relative;
+      display: block;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1000px;
+    }
+    &__img__container__title {
+      position: absolute;
+      top: 36%;
+      left: 10%;
+    }
   }
-  &__container {
+  .title {
+    font-size: 3em;
+  }
+  .paragraph {
     display: flex;
-    flex-direction: column;
-    color: $dark-text;
-    position: absolute;
-    top: 40%;
-    left: 0;
-    transform: translate(0, -30%);
-    width: 46vmin;
-    align-items: end;
+    gap: 0.5em;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1440px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 
-    .title {
-      font-size: 3vmin;
-      & img {
-        width: 6vmin;
-      }
+    &__img__container {
+      position: relative;
     }
-    .paragraph {
-      padding-top: 10px;
-      display: flex;
-      p {
-        font-size: 3vmin;
-        font-weight: 300;
-      }
+    &__img {
+      display: none;
     }
+    &__img2 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80vw;
+      min-width: 630px;
+      max-width: 1339px;
+    }
+    &__img__container__title {
+      position: absolute;
+      top: 36%;
+      left: 10%;
+    }
+  }
+  .title {
+    font-size: 2.4em;
+  }
+  .paragraph {
+    display: flex;
+    gap: 0.5em;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1070px) and (min-width: 569px) {
+  .title {
+    font-size: 1.4em;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 569px) {
   .hero {
     position: relative;
     width: 100vw;
 
+    &__img__container {
+      position: relative;
+    }
+
     &__img {
       display: block;
       width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100vw;
+      min-width: 390px;
+      max-width: 770px;
     }
     &__img2 {
       display: none;
     }
-    &__container {
-      display: flex;
-      flex-direction: column;
-      color: $dark-text;
+    &__img__container__title {
       position: absolute;
-      top: 35%;
-      left: -3vw;
-      transform: translate(0, -30%);
-      width: 46vmin;
-      align-items: end;
+      top: 26%;
+      left: 14%;
+    }
+    .title {
+      font-size: 1.5em;
+    }
+    .paragraph {
+      display: flex;
+      gap: 0.2em;
+      font-size: 0.7em;
+    }
+  }
+}
 
-      .title {
-        font-size: 4vmin;
-        & img {
-          width: 6vmin;
-        }
-      }
-      .paragraph {
-        padding-top: 5px;
-        display: flex;
-        p {
-          font-size: 3vmin;
-          font-weight: 300;
-        }
-      }
+@media only screen and (max-width: 569px) {
+  .hero {
+    position: relative;
+    width: 100vw;
+
+    &__img__container {
+      position: relative;
+    }
+
+    &__img {
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100vw;
+      min-width: 390px;
+      max-width: 770px;
+    }
+    &__img2 {
+      display: none;
+    }
+    &__img__container__title {
+      position: absolute;
+      top: 18%;
+      left: 14%;
+    }
+    .title {
+      font-size: 1em;
+    }
+    .paragraph {
+      display: flex;
+      gap: 0.2em;
+      font-size: 0.7em;
     }
   }
 }

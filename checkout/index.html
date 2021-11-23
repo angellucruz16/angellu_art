@@ -53,7 +53,7 @@
 
     <div class="order_container">
       <div class="img__main">
-       <img src="./img/thanks-putchase.png" alt="thanks purchase">
+        <img src="./img/thanks-putchase.png" alt="thanks purchase" />
       </div>
 
       <!-- ✅♍️ Aside info----------------- -->
@@ -66,28 +66,42 @@
 
         <form action="" id="checkout" class="form">
           <label class="paragraph form__item"
-            >Card Name <input type="text" id="name" name="name" />
+            >Card Name <input class="input" type="text" id="name" name="name" />
           </label>
           <label class="paragraph form__item"
-            >Card Number<input type="text" id="number" name="number"
+            >Card Number<input
+              class="input"
+              type="text"
+              id="number"
+              name="number"
           /></label>
           <label class="paragraph form__item"
-            >Secret Code<input type="text" id="code" name="code"
+            >Secret Code<input class="input" type="text" id="code" name="code"
           /></label>
-          <label class="paragraph form__item">Email<input type="email" id="email" name="email" /></label>
-          <label class="paragraph form__item
-            >Address<input type="text" id="address" name="address"
+          <label class="paragraph form__item"
+            >Email<input class="input" type="email" id="email" name="email"
           /></label>
+          <label class="paragraph form__item"
+            >Address<input
+              class="input"
+              type="text"
+              id="address"
+              name="address"
+          /></label>
+          <div class="paragraph total" id="total">
+            <!-- <p class="total-check">Total:</p>
+            <p>$$$$</p> -->
+          </div>
+          <input
+            class="paragraph product__add-to-cart-btn"
+            type="submit"
+            value="CONFIRM"
+          />
         </form>
-
-        <div class="paragraph total" id="total">
-          <!-- <p class="total-check">Total:</p>
-          <p>$$$$</p> -->
-        </div>
 
         <!-- line hereee -->
 
-        <button class="paragraph product__add-to-cart-btn">CONFIRM</button>
+        <!-- <button class="paragraph product__add-to-cart-btn">CONFIRM</button> -->
       </aside>
     </div>
 

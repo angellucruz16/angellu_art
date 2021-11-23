@@ -40,7 +40,7 @@ const createOrder = async (userFields) => {
             email: userLogged.email,
             status: "pending",
         });
-        alert(`Muchas gracias, tu pedido con ID: ${order.id} ha quedado registrado.`);
+        alert(`Your order ID: ${order.id} . Your order will arrive in 12 days`);
   
         deleteCart();
     } catch (e) {

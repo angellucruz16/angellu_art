@@ -2,9 +2,16 @@
 
 $dark-text: #1d3137;
 $blue-text: #0783f5;
-
+.slider__all {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
 .container-slider {
   width: 70%;
+  max-width: 606px;
   margin: auto;
   overflow: hidden;
   box-shadow: rgba(27, 27, 201, 0.349) 0px 7px 29px 0px;
@@ -12,6 +19,7 @@ $blue-text: #0783f5;
   border-radius: 50px;
   margin-top: 30px;
   margin-bottom: 50px;
+  height: 29vh;
 }
 
 .slider {
@@ -34,6 +42,7 @@ $blue-text: #0783f5;
   &__title p {
     color: $blue-text;
     font-size: 1.2em;
+    justify-content: center;
   }
 
   &__section {

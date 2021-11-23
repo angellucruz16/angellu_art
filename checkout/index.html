@@ -53,45 +53,41 @@
 
     <div class="order_container">
       <div class="img__main">
-        <div>
-          <h2 class="title">Thank you for supporting me!</h2>
-          <div class="subtitle">
-            <img src="../landing-page/img/s1-header/glitter.svg" alt="glitter decor" />
-            <p class="paragraph">Your order will be ready soon :)</p>
-          </div>
-        </div>
+       <img src="./img/thanks-putchase.png" alt="thanks purchase">
       </div>
 
       <!-- ✅♍️ Aside info----------------- -->
       <aside class="order__section">
-        <h3>Payment Details</h3>
-        <p>
+        <h3 class="title">Payment Details</h3>
+        <p class="paragraph">
           Complete your purchase by providing your <br />
           payment details.
         </p>
 
-        <form action="" id="checkout">
-          <label>Card Name <input type="text" id="name" name="name" /> </label>
-          <label
+        <form action="" id="checkout" class="form">
+          <label class="paragraph form__item"
+            >Card Name <input type="text" id="name" name="name" />
+          </label>
+          <label class="paragraph form__item"
             >Card Number<input type="number" id="number" name="number"
           /></label>
-          <label
+          <label class="paragraph form__item"
             >Secret Code<input type="number" id="code" name="code"
           /></label>
-          <label>Email<input type="email" id="email" name="email" /></label>
-          <label
+          <label class="paragraph form__item">Email<input type="email" id="email" name="email" /></label>
+          <label class="paragraph form__item
             >Address<input type="text" id="address" name="address"
           /></label>
         </form>
 
-        <div>
+        <div class="paragraph total">
           <p>Total</p>
           <p>$$$$</p>
         </div>
 
         <!-- line hereee -->
 
-        <button>CONFIRM</button>
+        <button class="paragraph">CONFIRM</button>
       </aside>
     </div>
 

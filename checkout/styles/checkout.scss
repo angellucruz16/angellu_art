@@ -14,14 +14,17 @@ $p-text: 0.5em;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 a {
   color: inherit;
 }
 body {
-  max-width: 1440px;
+  display: block;
   overflow-x: hidden;
-  padding-top: 1em;
+  justify-content: center;
+  margin: auto;
 }
 .title {
   font-family: bely-display, sans-serif;

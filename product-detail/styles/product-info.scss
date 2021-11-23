@@ -16,13 +16,20 @@ p {
 select {
   margin-bottom: 30px;
 }
+body {
+  display: flex !important;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+}
 .product {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5%;
-  max-width: 1339px;
+  max-width: 960px;
+  margin-bottom: 20%;
   &__images-preview {
     position: relative;
   }
@@ -170,8 +177,7 @@ select {
     &__title {
       color: $dark-text;
       font-size: 4em;
-      padding-bottom: 50px;
-      padding-top: 15%;
+
       text-align: center;
     }
     &__edit-info {

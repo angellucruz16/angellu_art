@@ -278,7 +278,6 @@
 
 @media all and (min-width: 700px) {
   .category {
-    background-color: #0783f5;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;

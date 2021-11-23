@@ -103,4 +103,21 @@
   display: flex;
   gap: 3em;
 }
+
+.total-check {
+  font-weight: 700;
+}
+
+.product__add-to-cart-btn {
+  background-color: #430bee;
+  border-radius: 30px;
+  color: white;
+  padding: 20px;
+  width: 30%;
+  border: none;
+  -webkit-box-shadow: rgba(27, 27, 201, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(27, 27, 201, 0.2) 0px 7px 29px 0px;
+  margin-top: 40px;
+  margin-left: 40%;
+}
 /*# sourceMappingURL=checkout-info.css.map */

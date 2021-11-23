@@ -89,6 +89,15 @@ checkoutForm.addEventListener("submit", e => {
         });
 
         console.log(total); 
-        
+        price();
     }
   });
+
+  const price  =  (cart) => {
+      const totalPrice = document.getElementById("total");
+      totalPrice.innerHTML = `
+      <p class="total-check">Total:</p>
+      <p>${formatCurrency(total)}</p>
+      `;
+  }
+console.log(total);

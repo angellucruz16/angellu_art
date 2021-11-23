@@ -9,7 +9,6 @@ const db = getFirestore(app);
 // ✅♍️ cart js
 const cartSection = document.getElementById("cart");
 const totalSection = document.getElementById("subtotal");
-const checkoutForm = document.getElementById("checkout");
 
 let total = 0;
 let cart = [];
@@ -32,7 +31,6 @@ const removeProduct = async (productId) => {
 
 
   renderMyCart(newCart);
-
 };
 
 const getFirebaseCart = async (userId) => {

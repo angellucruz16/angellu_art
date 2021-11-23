@@ -2,72 +2,70 @@
 // 📌 variables no funcionan desde el main
 $dark-text: #1d3137;
 $blue-text: #0783f5;
-
-.category {
-  display: block;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  margin-bottom: 90px;
-  align-content: center;
-  &__div {
-    margin: 0 auto;
-  }
-  &__container {
-    margin-top: 50px;
+@media all and (min-width: 700px) {
+  .category {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-
-    padding-top: 40px;
-    color: $dark-text;
-    // 📌articles no se centran del todo
-    .article {
-      text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    &__div {
+      margin: 0 auto;
     }
-    .article img {
-      width: 70%;
-      border-radius: 50%;
+    &__container {
+      margin-top: 100px;
+      display: flex;
+      color: $dark-text;
+      .article {
+        text-align: center;
+        margin: -44px;
+      }
+      .article img {
+        width: 40%;
+        border-radius: 50%;
+      }
     }
-  }
-  &__titles {
-    font-size: 2em;
-    letter-spacing: 0.5px !important;
-    font-weight: 700;
-    // 📌ya no me cambia
+    &__titles {
+      font-size: 0.8em;
+      letter-spacing: 0.5px !important;
+      font-weight: 700;
+      color: $blue-text;
+    }
   }
 }
 
 @media all and (max-width: 700px) {
   .category {
-    width: 100vw;
-    margin: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
-
-    margin-bottom: 41px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
     &__div {
-      padding-top: 20px;
       margin: 0 auto;
     }
     &__container {
-      margin-top: 0px;
+      //   margin-top: 50px;
+      padding-top: 5%;
       display: flex;
-      color: #1d3137;
       color: $dark-text;
-      // 📌articles no se centran del todo
+      justify-content: center;
+      margin: 0 auto;
       .article {
         text-align: center;
       }
       .article img {
-        width: 70%;
+        width: 60%;
         border-radius: 50%;
       }
     }
     &__titles {
       font-size: 1em;
       letter-spacing: 0.5px !important;
+      font-weight: 700;
+      color: $blue-text;
     }
   }
 }

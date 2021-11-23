@@ -41,10 +41,11 @@ const getUserInfo = async (userId) => {
         const provider = new GoogleAuthProvider();
         const result = await signInWithPopup(auth, provider);
         const user = result.user;
-    
-        const userInfo = await getUserInfo(user.uid);
-    
-        console.log(`Bienvenido ${userInfo.name}`);
+        
+        console.log(`Bienvenido ${user.displayName}`);
+
+        window.location = "../gallery";
+
     };
     
 

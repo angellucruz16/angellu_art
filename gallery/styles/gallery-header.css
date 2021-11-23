@@ -1,16 +1,3 @@
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
 @media all and (min-width: 600px) {
   .hero {
     position: relative;
@@ -38,7 +25,7 @@ ul {
   .hero__decor {
     position: absolute;
     max-width: 180px;
-    right: 221px;
+    right: 40px;
     top: 8px;
   }
   .header {
@@ -107,10 +94,7 @@ ul {
     color: #1d3137;
   }
   .hero__decor {
-    position: absolute;
-    max-width: 100px;
-    right: 9px;
-    top: 100px;
+    display: none;
   }
   .header {
     display: -webkit-box;

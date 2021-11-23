@@ -12,37 +12,39 @@
   </head>
   <body>
     <!--  ✅♍️ S1 Header -->
-    <header class="main-header">
-      <svg
-        class="main-header__menu"
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        fill="currentColor"
-        class="bi bi-list"
-        viewBox="0 0 16 16"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+    <header class="header">
+      <div class="logo">
+        <img src="../illustrations/header/logo.svg" alt="logo" />
+      </div>
+      <nav class="nav" id="nav-menu">
+        <img
+          src="../illustrations/header/list-two.svg"
+          alt="close"
+          class="header__close"
+          id="close-menu"
         />
-      </svg>
-      <img
-        class="main-header__logo"
-        src="./img/s1-header/logo.svg"
-        alt="page logo"
-      />
-      <nav class="main-header__nav hidden">
-        <ul>
-          <a href="#">home</a>
-          <a href="#">artwork</a>
-          <a href="#">shop</a>
-          <a href="#">about</a>
-          <a href="#">cart</a>
-          <a href="#">search</a>
+        <ul class="nav__list paragraph">
+          <li class="nav__item">
+            <a href="../landing-page/index.html" class="nav__link">home</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">about</a></li>
+          <li class="nav__item">
+            <a href="../gallery/index.html" class="nav__link">gallery</a>
+          </li>
+          <li class="nav__item">
+            <a href="../cart/index.html" class="nav__link">cart</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">profile</a></li>
         </ul>
       </nav>
+      <img
+        src="../illustrations/header/menu_black_24dp.svg"
+        alt=""
+        class="header__toggle"
+        id="toggle-menu"
+      />
     </header>
+  </div>
 
     <!--  ✅♍️ S1.2 migas de pan -->
     <div class="pov paragraph">

@@ -12,8 +12,8 @@
   </head>
 
   <body>
-     <!--  ✅♍️ S1 Header -->
-     <header class="header">
+    <!--  ✅♍️ S1 Header -->
+    <header class="header">
       <div class="logo">
         <img src="../illustrations/header/logo.svg" alt="logo" />
       </div>
@@ -34,12 +34,18 @@
           </li>
           <li class="nav__item">
             <a href="../cart/index.html" class="nav__link">cart</a>
-            <li class="nav__item">
-              <a href="../register/index.html" class="nav__link">sign up</a>
-            </li>
-            <li class="nav__item">
-              <a href="../sign-in/index.html" class="nav__link">sign in</a>
-            </li>
+          </li>
+
+          <li class="nav__item">
+            <a href="../register/index.html" class="nav__link">sign up</a>
+          </li>
+          <li class="nav__item">
+            <a href="../sign-in/index.html" class="nav__link">sign in</a>
+          </li>
+          <li class="nav__item">
+            <a href="../sign-in/index.html" class="nav__link">admin</a>
+          </li>
+        </ul>
       </nav>
       <img
         src="../illustrations/header/menu_black_24dp.svg"
@@ -49,41 +55,41 @@
       />
     </header>
     <div class="main-container">
-    <figure class="img-container">
-      <img
-        class="img-container__main"
-        src="../illustrations/RachelBeautyCollection.png"
-        alt="principal img"
-      />
-    </figure>
+      <figure class="img-container">
+        <img
+          class="img-container__main"
+          src="../illustrations/RachelBeautyCollection.png"
+          alt="principal img"
+        />
+      </figure>
 
-    <!-- ✨form section -->
-    <aside class="form-container">
-      <div>
-        <h2 class="subtitle">Sign In</h2>
-        <h1 class="title">Welcome Back</h1>
-        <p class="text">🍣 Thank you for supporting my art! 🍙</p>
-      </div>
-      <form class="form form-container__form input-title">
-        <label for="email">
-          <samp>email contact</samp>
-          <input type="email" name="email" />
-        </label>
-        <label for="password">
-          <samp>Password</samp>
-          <input type="password" class="password" name="password" />
-        </label>
+      <!-- ✨form section -->
+      <aside class="form-container">
+        <div>
+          <h2 class="subtitle">Sign In</h2>
+          <h1 class="title">Welcome Back</h1>
+          <p class="text">🍣 Thank you for supporting my art! 🍙</p>
+        </div>
+        <form class="form form-container__form input-title">
+          <label for="email">
+            <samp>email contact</samp>
+            <input type="email" name="email" />
+          </label>
+          <label for="password">
+            <samp>Password</samp>
+            <input type="password" class="password" name="password" />
+          </label>
 
-        <button name="submit" id="login" class="register-btn">SIGN IN</button>
-        <p class="text google-text">- Or sign In with Google -</p>
-        <button class="google" id="google">
-          <img src="./img/google-icon.png" alt="google icon" />
-        </button>
-      </form>
+          <button name="submit" id="login" class="register-btn">SIGN IN</button>
+          <p class="text google-text">- Or sign In with Google -</p>
+          <button class="google" id="google">
+            <img src="./img/google-icon.png" alt="google icon" />
+          </button>
+        </form>
 
-      <div class="element-container"></div>
-    </aside>
-  </div>
+        <div class="element-container"></div>
+      </aside>
+    </div>
     <!-- ☔ javaScript -->
     <script type="module" src="./javaScript/sign-in.js"></script>
     <script src="./../utils.js"></script>

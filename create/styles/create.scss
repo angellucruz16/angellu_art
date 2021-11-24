@@ -8,15 +8,24 @@ $medium: 1.5em;
 $p-text: 0.5em;
 // imports
 @import "create-header";
+@import "create-product";
+
 // code----
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  color: inherit;
 }
 body {
-  max-width: 100vw;
+  display: block;
   overflow-x: hidden;
+  justify-content: center;
+  margin: auto;
 }
 .title {
   font-family: bely-display, sans-serif;

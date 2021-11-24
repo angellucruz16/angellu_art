@@ -49,35 +49,31 @@
       <h1 class="hero__title title">Add new product</h1>
     </section>
 
-    <div class="product container">
-      <div class="product__preview">
-        <h3>Product Preview</h3>
-        <img src="" alt="" id="preview" />
-        <div>
-          <!-- 🎃🎃🎃🎃all three images here -->
-        </div>
+    <!-- <!--  ✅♍️ product info----------------- -->
+    <div class="main-container">
+      <div class="product-container product">
+        <img src="./img/img.png" alt="img decoration">
       </div>
-
       <!-- <!--  ✅♍️ Aside info----------------- -->
       <aside class="product__info">
-        <h3>Product Info</h3>
+        <h3 class="title title-info">Product Info</h3>
         <form id="createProduct">
           <!-- 🎃🎃 -->
-          <div class="product__info__first-third">
+          <div class="product__info__first-third paragraph">
             <!-- one -->
             <div>
-              <p>Title</p>
-              <input type="text" name="name" placeholder="Product Title" />
+              <p class="input-title">Title</p>
+              <input class="input" type="text" name="name" placeholder="Product Title" />
             </div>
             <!-- two -->
             <div>
-              <p>Price</p>
-              <input type="number" name="price" placeholder="Product price" />
+              <p class="input-title">Price</p>
+              <input class="input" type="number" name="price" placeholder="Product price" />
             </div>
             <!-- three -->
             <div>
-              <label for="type">Type</label>
-              <select name="type">
+              <label for="type" >Type</label>
+              <select class="input input-area" name="type" class="paragraph">
                 <option value="print">Print</option>
                 <option value="sticker">sticker</option>
                 <option value="merch">Merch</option>
@@ -86,13 +82,13 @@
           </div>
 
           <!-- 🎃🎃  Description-->
-          <div class="product__info__middle-third">
+          <div class="product__info__middle-third paragraph">
             <label for="description">Description</label>
-            <textarea name="description"></textarea>
+            <textarea class="input input-area" name="description"></textarea>
           </div>
 
           <!-- 🎃🎃 -->
-          <div class="product__info__last-third">
+          <div class="product__info__last-third paragraph">
             <!-- one -->
             <div class="images">
               <div class="images__input">
@@ -118,13 +114,14 @@
           <input
             class="create__button"
             type="submit"
-            value="Agregar producto"
+            value="ADD PRODUCT"
             id="submitButton"
           />
           <p id="feedback"></p>
         </form>
       </aside>
     </div>
+  </div>
 
     <script src="../utils.js"></script>
     <script type="module" src="./javaScript/create-product.js"></script>

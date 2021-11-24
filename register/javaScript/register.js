@@ -29,10 +29,10 @@ const elementContainer = document.querySelector(".element-container");
       await setDoc(doc(db, "users", userId), userFields);
     } catch (e) {
       if (e.code === "auth/email-already-in-use") {
-        console.log("Correo electrónico en uso...")
+        console.log("This email is already in use...")
       }
       if (e.code === "auth/weak-password") {
-          console.log("Intenta con una contraseña más segura...")
+          console.log("low secure password...")
       }
     }
   }

@@ -8,7 +8,7 @@ const db = getFirestore(app);
 
 let cart = [];
 let total = 0;
-
+let userLogged = {};
 
 const checkoutForm = document.getElementById("checkout");
 
@@ -101,3 +101,4 @@ checkoutForm.addEventListener("submit", e => {
       `;
   }
 console.log(total);
+

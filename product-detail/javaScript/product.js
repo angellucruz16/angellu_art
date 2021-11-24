@@ -108,10 +108,6 @@ const loadProductInfo = (product) => {
 
 }
 
-
-
-// console.log(product.images);
-
 // ✅♍️ Images select Logic
 
 const gallery = document.getElementById("gallerySelect");
@@ -124,10 +120,7 @@ const sizes = document.getElementById("sizes");
 // ✅♍️ button Logic
 const productCart = product.querySelector(".product__add-to-cart-btn");
 productCart.addEventListener("click", e =>{
-        console.log("click");
         e.prevent
 });
 
-
-//createSelectSize();
 getProduct();

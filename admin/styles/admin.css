@@ -1,0 +1,221 @@
+@media all and (min-width: 600px) {
+  .header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 0;
+  }
+  .header__toggle {
+    display: none;
+  }
+  .header__close {
+    display: none;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav__item {
+    margin: 0 8px;
+  }
+  .nav__link {
+    padding: 10px;
+    color: orange;
+    border-radius: 5px;
+  }
+  .nav__link:hover {
+    color: blue;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 48px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 0 28px;
+  }
+  .header__toggle {
+    display: inline;
+    color: #af0d0d;
+    width: 30px;
+    width: 20px;
+  }
+  .header__close {
+    position: absolute;
+    right: 24px;
+    width: 20px;
+    display: block;
+  }
+  .header__close:hover {
+    background-color: orange;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #370df3;
+    width: 60%;
+    height: 79vh;
+    padding: 11px 0;
+    z-index: 100;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 0 0 0 50px;
+  }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    font-weight: 800 !important;
+  }
+  .nav__item {
+    margin: 2rem 0;
+    color: white;
+  }
+  .show {
+    right: 0;
+  }
+}
+
+.hero-image {
+  background-image: url("../img/background.png");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+}
+
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.confirm {
+  background-color: #430bee;
+  border-radius: 30px;
+  color: white;
+  padding: 20px;
+  width: 62%;
+  border: none;
+  -webkit-box-shadow: rgba(27, 27, 201, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(27, 27, 201, 0.2) 0px 7px 29px 0px;
+  margin-top: 40px;
+}
+
+.select {
+  margin-top: 10%;
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  background-position: center;
+  display: block;
+  overflow-x: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.title {
+  font-family: bely-display, sans-serif;
+  letter-spacing: 1px;
+}
+
+.title-lighter {
+  font-family: bely, sans-serif;
+}
+
+.paragraph {
+  font-family: muli, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-fill {
+  text-align: center;
+  font-family: "Muli", sans-serif;
+  text-decoration: none;
+  color: cornsilk;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 22px;
+  border-radius: 50px;
+  background: #f2994a;
+}
+/*# sourceMappingURL=admin.css.map */

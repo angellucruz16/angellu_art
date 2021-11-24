@@ -42,10 +42,9 @@ const getUserInfo = async (userId) => {
         const result = await signInWithPopup(auth, provider);
         const user = result.user;
         
-        console.log(`Bienvenido ${user.displayName}`);
+        alert(`Bienvenido ${user.displayName}`);
 
         window.location = "../gallery";
-
     };
     
 
@@ -57,24 +56,21 @@ const getUserInfo = async (userId) => {
         const userInfo = await getUserInfo(user.uid);
 
         if (userInfo.isAdmin) {
-            window.location = "../create-product";
+            window.location = "../landing-page/index.html";
         } else {
-            window.location = "../gallery";
+            window.location = "../gallery/index.html";
         }
-
-        console.log(userInfo);
 
     } catch (e) {
         console.log(e);
         if (e.code === "auth/user-not-found") {
-            newElement("Este usuario no existe en nuestra base de datos");
+            newElement("this user doesn't exist");
         }
         if (e.code === "auth/wrong-password") {
             newElement("Wrong password");
         }
     }
 }
-
 
 googleButton.addEventListener("click", e =>{
     loginWithGoogle();

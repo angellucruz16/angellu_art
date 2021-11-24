@@ -97,7 +97,7 @@ const renderProduct =  (product) => {
 
     newProduct.addEventListener("click", e => {
       if (e.target.id === "deleteButton") {
-        console.log("gola");
+         
         removeProduct(product.id);
       }
   });
@@ -116,67 +116,6 @@ const renderMyCart = (cart) => {
   totalSection.innerText = `${formatCurrency(total)}`;
 };
 
-// const deleteCart = async () => {
-//   try {
-//       await deleteDoc(doc(db, "cart", userLogged.uid));
-//       renderMyCart([]);
-//       console.log("updated cart...");
-//   } catch(e) {
-//       console.log(e);
-//   }
-// };
-
-// const createOrder = async (userFields) => {
-//   try {
-//       const order = await addDoc(collection(db, "orders"), {
-//           ...userFields, // spread 
-//           products: cart,
-//           total,
-//           email: userLogged.email,
-//           status: "pending",
-//       });
-//       alert(`Thank you so much! your ID: ${order.id}`);
-
-//       deleteCart();
-//   } catch (e) {
-//       console.log(e)
-//   }
-// };
-
-
-// if (checkoutForm) {
-
-//   checkoutForm.addEventListener("submit", e => {
-//     e.preventDefault();
-
-//     const name = checkoutForm.name.value;
-//     const number = checkoutForm.number.value;
-//     const code = checkoutForm.code.value;
-//     const email = checkoutForm.email.value;
-//     const address = checkoutForm.address.value;
-
-
-//     const userFields = {
-//         name,
-//         number,
-//         code,
-//         email,
-//         address,
-//     };
-
-//     if (cart.length) {
-//         if (name && number && code && email && address) {
-//             createOrder(userFields);
-//         } else {
-//             alert("Please complet all fields...");
-//         }
-//     } else {
-//         alert("Add products in your cart")
-//     }
-//   });
-
-  
-// }
 
 onAuthStateChanged(auth, async (user) => {
   if (user) {
@@ -189,18 +128,11 @@ onAuthStateChanged(auth, async (user) => {
           ...user,
           ...userInfo
       };
-      console.log(userLogged);
   } else {
       cart = getMyCart();
       renderMyCart(cart);
   }
 });
-
-// 😵 so i can use this function in other js file 
-// export{
-//   deleteCart,
-  
-// }
 
 export {
   getFirebaseCart,

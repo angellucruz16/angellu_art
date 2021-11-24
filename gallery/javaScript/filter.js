@@ -35,4 +35,4 @@ $(".custom-select").each(function() {
     $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
   });
   
-  console.log("hey");
+   hey");

@@ -46,15 +46,11 @@ const createProduct = async () => {
     const mainImage = createProductForm.image.files[0];
     const gallery = createProductForm.gallery.files;
 
-
-    console.log(mainImage);
-
     if (name && price && description && type && mainImage) {
         feedback.innerText = "Uploading product...";
         try {
              
             const urlMainImage = await uploadMainImage(mainImage);
-            console.log(urlMainImage);
             let galleryImages = [];
 
 
@@ -88,14 +84,12 @@ const createProduct = async () => {
                 console.log(e);
             }   
     } else {
-        console.log("complete all fields");
+        alert("complete all fields");
     }
 };
-
 
 // create product button
 createProductForm.addEventListener("submit", e => {
     e.preventDefault();
     createProduct();
-    console.log("click");
 });

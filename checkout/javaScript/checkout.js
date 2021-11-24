@@ -15,7 +15,6 @@ const checkoutForm = document.getElementById("checkout");
 const getFirebaseCart = async (userId) => {
     const docRef = doc(db, "cart", userId);
     const docSnap = await getDoc(docRef);
-    console.log(docSnap);
     return docSnap.exists() ? docSnap.data() : {
         products: []
     }
@@ -25,7 +24,7 @@ const deleteCart = async () => {
     try {
         await deleteDoc(doc(db, "cart", userLogged.uid));
         renderMyCart([]);
-        console.log("updated cart...");
+        alert("updated cart...");
     } catch(e) {
         console.log(e);
     }
@@ -87,8 +86,6 @@ checkoutForm.addEventListener("submit", e => {
         cart.forEach(product => {
             total += parseInt(product.price);
         });
-
-        console.log(total); 
         price();
     }
   });
@@ -100,5 +97,5 @@ checkoutForm.addEventListener("submit", e => {
       <p>${formatCurrency(total)}</p>
       `;
   }
-console.log(total);
+
 
